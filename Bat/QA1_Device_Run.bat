@@ -1,0 +1,1 @@
+cmd /k "D:\Dropbox\Kofile\dropbox_scripts\venv\Scripts\python.exe D:/Dropbox/Kofile/dropbox_scripts/QA1_Devices_Run.py"

@@ -1,0 +1,56 @@
+select * from VG69999.admin_key_activity
+--UPDATE VG69999.admin_key_activity set hold_on=0 where aduser_id = 
+
+select * from VG69999.scanner
+--update VG69999.scanner set scanner_status=1 where scanner_id =
+
+select * from VG69999.BM_BALANCESESSION where ADUSER_ID = 68 order by BALANCESESSION_ID desc
+delete from VG69999.BM_BALANCESESSION where BALANCESESSION_ID = 24936
+
+------Print Jobs----
+
+select CREATED_DATE,DEVICE_JOB_CONFIG
+from [VG69999].[DEVICE_JOB]
+where device_job_id in (
+SELECT device_job_id
+FROM [VG69999].[DEVICE_JOB]
+WHERE
+ORDER_ID in (
+select order_id from
+[VG69999].[order]
+where [ORDER_NUM] ='20211026000106'     
+)) ORDER BY DEVICE_JOB_ID DESC
+
+------Clear Queue----
+
+update VG69999.ORDER_ITEM_STATUS set ORDER_ITEM_STATUS = 1 where ORDER_ITEM_STATUS in (11, 21, 31)    
+update vg69999.[order] set workflow_step_id = 5 where workflow_step_id in (2, 3, 4)       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+select * from VG69999.device_service where DEVICE_SERVICE_NAME like '%Artyom%'
+--ARTYOM-PC
+--update VG69999.device_service set work_station_name = NULL where DEVICE_SERVICE_ID = 3

@@ -1,0 +1,1 @@
+C:\Users\artyom.shchokin\PycharmProjects\kofile-automation\Kofile\venv\Scripts\python.exe C:/Users/artyom.shchokin/PycharmProjects/scripts/add_new_scanner_script.py

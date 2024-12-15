@@ -1,0 +1,9 @@
+v 3.1.830.0
+#14868 Integrate Print Service into current device service system;
+v 3.1.1030.0
+#19859 CRS Agent: Printing throws an error in case of network printer;
+#25909 SPIKE - Epson Slip printer investigation;
+v 3.1.1030.0
+#19859 CRS Agent: Printing throws an error in case of network printer;
+#28664 Print Service Hidalgo: Clerks Are Unable To Print;
+

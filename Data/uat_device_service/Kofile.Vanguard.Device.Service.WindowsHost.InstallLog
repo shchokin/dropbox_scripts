@@ -1,0 +1,296 @@
+﻿Installing assembly 'D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_QA_69999\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Warning: The source Kofile.Vanguard.Device is not registered on the local machine.
+Service Kofile.Vanguard.Device is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_RT\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48121\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48215\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Attempt to stop service Kofile.Vanguard.Device.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48071\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48001\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48001\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48001\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_Denton_48001\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_Denton_48001\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_Denton_48001\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Attempt to stop service Kofile.Vanguard.Device.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.
+Installing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Installing service Kofile.Vanguard.Device...
+Service Kofile.Vanguard.Device has been successfully installed.
+Creating EventLog source Kofile.Vanguard.Device in log Application...
+Committing assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Uninstalling assembly 'D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.exe
+   logfile = D:\VOLO\OCR\OCR_UAT_1_ALL\Kofile.Vanguard.Device.Service.WindowsHost.InstallLog
+Removing EventLog source Kofile.Vanguard.Device.
+Service Kofile.Vanguard.Device is being removed from the system...
+Service Kofile.Vanguard.Device was successfully removed from the system.

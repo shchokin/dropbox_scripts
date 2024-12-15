@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<REQUEST_GROUP PRIAVersionIdentifier='2.4.1'>
+<SUBMITTING_PARTY _Name='Cuyahoga Admin' _StreetAddress='555 Main Street' _StreetAddress2='Suite 201' _City='City' _State='AR' _PostalCode='55555'/>
+<REQUEST RequestDateTime='2022-10-28T10:14:13.734-0500'>
+<PRIA_REQUEST>
+<PACKAGE _Identifier='1000029' _ReturnByEmail='Y'>
+<PRIA_DOCUMENT DocumentNonRecordableIndicator='N' PRIAVersionIdentifier='2.4.1' RecordableDocumentType='DEED - AFFIDAVIT' RecordableDocumentTypeOtherDescription='' RecordableDocumentSequenceIdentifier='1' _Code='DEED - AFFIDAVIT'>
+<GRANTOR/>
+<GRANTEE/>
+<PROPERTY/>
+<PARTIES>
+<_RETURN_TO_PARTY NonPersonEntityIndicator='Y' _UnparsedName='David Dudenhefer' _StreetAddress='123 North Street' _StreetAddress2='Unit 5C' _City='City' _State='CT' _PostalCode='55555'/>
+</PARTIES>
+<EMBEDDED_FILE EmbeddedFileName='image_47.tif' EmbeddedFileType='Image' FileDescription='multipage tif' FileEncodingType='Base64' MIMEType='TIFF'>
+<DOCUMENT>{0}</DOCUMENT>
+</EMBEDDED_FILE>
+</PRIA_DOCUMENT>
+<PRIA_DOCUMENT DocumentNonRecordableIndicator='N' PRIAVersionIdentifier='2.4.1' RecordableDocumentType='PlatOhioDS' RecordableDocumentTypeOtherDescription='' RecordableDocumentSequenceIdentifier='1' _Code='PlatOhioDS'>
+<GRANTOR/>
+<GRANTEE/>
+<PROPERTY/>
+<PARTIES>
+<_RETURN_TO_PARTY NonPersonEntityIndicator='Y' _UnparsedName='David Dudenhefer' _StreetAddress='123 North Street' _StreetAddress2='Unit 5C' _City='City' _State='CT' _PostalCode='55555'/>
+</PARTIES>
+<EMBEDDED_FILE EmbeddedFileName='image_47.tif' EmbeddedFileType='Image' FileDescription='multipage tif' FileEncodingType='Base64' MIMEType='TIFF'>
+<DOCUMENT>{0}</DOCUMENT>
+</EMBEDDED_FILE>
+</PRIA_DOCUMENT>
+<PRIA_DOCUMENT DocumentNonRecordableIndicator='N' PRIAVersionIdentifier='2.4.1' RecordableDocumentType='DEED - AFFIDAVIT' RecordableDocumentTypeOtherDescription='' RecordableDocumentSequenceIdentifier='1' _Code='DEED - AFFIDAVIT'>
+<GRANTOR/>
+<GRANTEE/>
+<PROPERTY/>
+<PARTIES>
+<_RETURN_TO_PARTY NonPersonEntityIndicator='Y' _UnparsedName='David Dudenhefer' _StreetAddress='123 North Street' _StreetAddress2='Unit 5C' _City='City' _State='CT' _PostalCode='55555'/>
+</PARTIES>
+<EMBEDDED_FILE EmbeddedFileName='image_47.tif' EmbeddedFileType='Image' FileDescription='multipage tif' FileEncodingType='Base64' MIMEType='TIFF'>
+<DOCUMENT>{0}</DOCUMENT>
+</EMBEDDED_FILE>
+</PRIA_DOCUMENT>
+</PACKAGE>
+</PRIA_REQUEST>
+</REQUEST>
+</REQUEST_GROUP>

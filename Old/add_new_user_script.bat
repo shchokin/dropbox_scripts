@@ -1,0 +1,1 @@
+C:\Python382\python.exe C:/Users/artyom.shchokin/PycharmProjects/untitled/add_new_scanner_script.py

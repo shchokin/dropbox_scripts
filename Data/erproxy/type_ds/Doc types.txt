@@ -1,0 +1,16 @@
+----QA-1
+
+Deed --OLD!
+DEED - AFFIDAVIT
+
+---UAT-1
+
+DEED - AFFIDAVIT
+
+----
+
+SELECT * FROM VG48999.ERDOCTYPE_DOCTYPE ed
+inner join VG48999.DOC_TYPE dt on ed.doc_type_desc = dt.doc_type_desc
+inner join vg48999.DOCGROUP_DOCTYPE dgdt on dt.DOC_TYPE_ID = dgdt.DOC_TYPE_ID
+inner join VG48999.WORKFLOW w on dgdt.DOC_GROUP_ID = w.DOC_GROUP_ID
+where w.ORDER_ITEM_TYPE_ID in (318, 321)

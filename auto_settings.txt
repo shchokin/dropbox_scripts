@@ -1,0 +1,298 @@
+--------------------------------QA-1_DEV--------------------------------
+
+scanned_id": 158
+
+"printer_id": 99
+
+drawer_id: 674
+
+vpn2 = os.popen("rasdial \"VPN Connection QA1\"").read()
+os.popen("route add 10.0.0.9 MASK 255.255.255.255 0.0.0.0 IF 55").read()
+
+"artyom.shchokin"
+"Artyom"
+"Shchokin"
+"230885ShArVl27"
+
+--------------------------------QA-1_REF--------------------------------
+
+
+scanned_id": 8  
+
+"printer_id": 84    
+
+drawer_id: 83   
+
+VPN.py
+
+vpn2 = os.popen("rasdial \"VPN Connection QA1\"").read()
+os.popen("route add 10.0.0.9 MASK 255.255.255.255 0.0.0.0 IF 55").read()
+
+"artyom.shchokin"
+"Artyom"
+"Shchokin"
+"230885ShArVl27"
+
+--------------------------------QA-1_Prod-------------------------------
+
+
+qa-1 48999
+
+scanner_id : 6
+
+printer_id: 70
+
+drawer_id: 69
+
+"qa_PM": {
+    "code": "48999",
+    "config_name": "product",
+    "scanned_id": 6,
+    "domain": "crs.qa-1.kofile.systems",
+    "config_import_path": "projects.Kofile.testdata",
+    "url": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://crs.qa-1.kofile.systems/%s/Account/ReturnClaim&amp;Referrer=",
+    "clerk_search_url": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://clerksearch.qa-1.kofile.systems/%s/Security/ReturnClaim?clerkMode=True",
+    "portal": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://portal.qa-1.kofile.systems/%s/",
+    "erProxy": "http://erproxy.qa-1.kofile.systems/%s",
+    "user":["artyom.shchokin","User4","User5","User6"],
+    "user_first": ["artyom","User4","User5","user6"],
+    "user_last": ["shchokin","User4","User5","user6"],
+    "drawer": {"type": "user", "init_popup": false, "init_same_day_popup": false},
+    "drawer_id": [75, 2948, 2954, 3048],
+    "password": ["230885ShArVl27","Automation_4_18","Automation_5_8","Automation_6_5"],
+    "email_user": "tumovas@gmail.com",
+    "guest_user": "nel",
+    "kiosk_user_email": "vimmelluqe-3279@yopmail.com",
+    "kiosk_user_password": "00000",
+    "azure": {
+      "account_name": "vgdevimages",
+      "account_key": "VyTBoC6Fq2RAT/L3GARPnle2ALkD1SJjexb2N5gqasK+7px2hfddhAI/yMEyXPnluok+1DvAMHxFSlayIXu8Xg=="},
+    "project_db": {
+      "database": "VANGUARD_TX_QA",
+      "driver": "{SQL Server}",
+      "user": "qa1",
+      "password": "deadbeef",
+      "server": "10.0.0.9"
+    },
+    "printer_id": 70,
+    "device_service_path": "C:\\QA_Test\\CRS_Agent_QA_48000"
+  },
+
+
+-------------------------------UAT_REF-----------------------------------
+
+scanned_id": 22,    
+
+"printer_id": 147 
+
+drawer_id: 146
+
+vpn2 = os.popen("rasdial \"VPN Connection UAT\"").read()
+os.popen("route add 10.0.0.7 MASK 255.255.255.255 0.0.0.0 IF 55").read()
+
+"artyom.shchokin"
+"artyom"
+"shchokin"
+"230885ShArVl27"
+
+-------------------------------UAT-Prod---------------------------------------
+
+scanned_id": 25    
+
+"printer_id":  104
+
+drawer_id: 103
+
+"uat_PM": {
+    "code": "48999",
+    "config_name": "product",
+    "scanned_id": 25,
+    "domain": "crs.uat-1.kofile.systems",
+    "config_import_path": "projects.Kofile.testdata",
+    "url": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://crs.uat-1.kofile.systems/%s/Account/ReturnClaim&amp;Referrer=",
+    "clerk_search_url": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://clerksearch.uat-1.kofile.systems/%s/Security/ReturnClaim?clerkMode=True",
+    "portal": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://portal.uat-1.kofile.systems/%s/",
+    "erProxy": "http://erproxy.uat-1.kofile.systems/%s",
+    "user":["artyom.shchokin","User4","User5", "User6"],
+    "user_first": ["artyom","user4","user5", "user6"],
+    "user_last": ["shchokin","user4","user5", "user6"],
+    "drawer": {"type": "workstation", "init_popup": false, "init_same_day_popup": false},
+    "drawer_id": [103,615,615,615],
+    "password": ["230885ShArVl27","Automation_4_18","Automation_5_8","Automation_6_5"],
+    "email_user": "tumovas@gmail.com",
+    "guest_user": "nel",
+    "kiosk_user_email": "vimmelluqe-3279@yopmail.com",
+    "kiosk_user_password": "00000",
+    "azure": {
+      "account_name": "vgtestcontent",
+      "account_key": "NhoF3Wr1cksGOFZ0nMJ3R/qPauW122FDiQ197kTW+iqurRSyO36F8ZA8/LHvK0AkgDcrfP04RQy0AqB/iLCVfg=="},
+    "project_db": {
+      "database": "VANGUARD_TX_PRE",
+      "driver": "{SQL Server}",
+      "user": "uat1",
+      "password": "deadbeef",
+      "server": "10.0.0.7"
+    },
+    "printer_id": 104
+  },
+
+
+
+-------------------------------Production-----------------------------------------------
+
+"prod_ref": {
+    "code": "48000",
+    "config_name": "texas_reference",
+    "scanned_id": 70,
+    "domain": "crs.prod1.kofile.com",
+    "config_import_path": "projects.Kofile.testdata",
+    "url": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=https://crs.prod1.kofile.com/%s/Account/ReturnClaim&Referrer=",
+    "portal": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://portal.prod1.kofile.com/%s/",
+    "user":["artyom.shchokin"],
+    "user_first": ["Artyom"],
+    "user_last": ["Shchokin"],
+    "password": ["230885ShArVl27"],
+    "email_user": "tumovas@gmail.com",
+    "guest_user": "nel",
+    "api_params": {
+      "api_auth_type": "browser",
+      "parcel_id": "2"
+    }
+  },
+-------------------------------------------------------------------------------------------	
+
+ORDER_HEADER = {
+    "account": {
+        "type": "account",
+        "value": "VoloAutoTest - test@gmail.com",
+    },
+    "email": {
+        "type": "email",
+        "value": "artyomzp@gmail.com",
+    },
+    "guest": {
+        "type": "guest",
+        "value": "autotest",
+    }
+}
+
+---------------------------------QA_1_DEV-------------------------------------
+
+
+
+CRS_OrderFinalization.py
+
+txt_table_data_doc_number = (
+        "xpath",
+        "//table[@id='orderSummary']//td[@data-column='Document_InstrumentNumber']",
+        "Order Finalization doc number")
+
+    def __69999__(self):
+        self.txt_table_data_doc_number = (
+            "xpath",
+            "//table[@id='orderSummary']//td[@data-column='Document_DocAndAppNum']",
+            "Order Finalization doc number")
+			
+	def __39035__(self):
+        self.txt_table_data_doc_number = (
+            "xpath",
+            "//table[@id='orderSummary']//td[@data-column='Document_DocAndTaxNum']",
+            "Order Finalization doc number")		
+			
+Mapping re.sub -> / -> ""	
+
+-------------------------------delete odd "/" symbol before doc number--------------------
+
+order_finalization.py
+
+def get_year_doc_number(self, index=1):
+
+   doc_numbers = self._lib.general_helper.find_elements(
+            self._pages.CRS.order_finalization.txt_table_data_doc_number, get_text=True)
+			
+        for i in range(len(doc_numbers)):
+            doc_numbers[i] = "".join(doc_numbers[i]).replace("/", "")	
+
+--------------------------------investigate instrument date focus in at Verification Entry-------			
+
+vpn_disconnect:
+
+os.system("rasdial \"VPN Connection UAT\" /disconnect")
+
+os.system("rasdial \"VPN Connection QA1\" /disconnect")
+
+---------------------
+
+
+
+
+---------Verification-----------------
+
+instument date -> press tab
+
+
+---------------------------------------------------
+
+"Real_Property_Alabama": {
+        "order_type": "Real Property - Alabama",
+        "order_doc_type": "ABANDONMENT",
+        "doc_type": True,
+        "doc_group": "REAL PROPERTY",
+        "order_item_description": {
+            "value": "$50.00/pg"
+        },
+        "capture": {
+                "step": True,
+                "expanded_indexing": True
+            }
+    },
+	
+names.py
+
+'ParcelId': [f"{randint(100, 999)}-{randint(10, 99)}-{randint(100, 999)}"],
+
+ "LoanAmount": ["1"],
+ "NoOfAcres": ["1"],	
+ 
+ if self.data["OIT"] == "RP_Recordings" or self.data["OIT"] == "Real_Property_Alabama":
+ 
+ 
+ ------------PROD---------------
+ 
+ "config_name": "texas_reference",
+"config_import_path": "projects.Kofile.testdata",
+"search_url": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=https://{mode}.prod1.kofile.com/%s/Security/ReturnClaim?clerkMode={is_clerk}",
+"portal": "http://%s:%s@10.0.1.73:8001/%s/?ReturnUrl=http://portal.prod1.kofile.com/%s/",
+"erProxy": "http://erproxy.prod1.kofile.com/%s",
+
+
+-----------VPN-------------------
+
+    try:
+        logging.info("-----VPN connection-----")
+        if 'uat' in GeneralHelpers.get_env_name().lower():
+            subprocess.call([r"D:\Work\VOLO\Tools\Scripts\Bat\UAT_VPN_On.bat"])
+        else:
+            subprocess.call([r"D:\Work\VOLO\Tools\Scripts\Bat\QA1_VPN_On.bat"])
+    except Exception as e:
+        raise ValueError(f"-----VPN connection has been failed!-----:\n {e}")
+		
+	
+        try:
+        if 'uat' in GeneralHelpers.get_env_name().lower():
+           subprocess.call(["rasdial", "VPN Connection UAT", "/disconnect"])
+        subprocess.call(["rasdial", "VPN Connection QA1", "/disconnect"])
+        logging.info("-----VPN disconnected-----")
+    except Exception as e:
+        logging.warning(e)
+        logging.error("-----VPN disconnection has been failed!-----") 	
+		
+
+-----------------------------Open saved order in Order Queue-------------------------------
+
+# self.data["order_number"] = '20231030000001'
+# self.atom.CRS.general.go_to_crs()
+# self.lib.CRS.order_queue.click_running_man()		
+
+--------------------------------------------------------------------------------------------
+

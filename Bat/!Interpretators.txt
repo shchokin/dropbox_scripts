@@ -1,0 +1,3 @@
+C:\Users\artyom.shchokin\PycharmProjects\scripts\venv\Scripts\python.exe  -pass
+
+D:\Dropbox\Kofile\dropbox_scripts\venv\Scripts\python.exe      --pass -> if env created based on "C:\Python39\python.exe version " and pymssql 2.2.5

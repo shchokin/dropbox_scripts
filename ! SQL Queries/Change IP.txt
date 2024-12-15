@@ -1,0 +1,26 @@
+10.0.2.247      --Office IP 
+
+10.11.252.23    --Home IP via FortiClient (static)
+
+---------------------------------------------------------------------------------------------------------------
+select * from VG69999.work_station where WORK_STATION_ADDRESS = '10.0.2.247'
+--update VG69999.work_station set work_station_name = '10.11.252.23' where WORK_STATION_ADDRESS = '10.0.2.247'
+--update VG69999.work_station set work_station_address = '10.11.252.23' where WORK_STATION_ADDRESS = '10.0.2.247'
+---------------------------------------------------------------------------------------------------------------
+select * from VG69999.work_station where WORK_STATION_ADDRESS = '10.11.252.23'
+--update VG69999.work_station set work_station_name = '10.0.2.247' where WORK_STATION_ADDRESS = '10.11.252.23'
+--update VG69999.work_station set work_station_address = '10.0.2.247' where WORK_STATION_ADDRESS = '10.11.252.23'
+---------------------------------------------------------------------------------------------------------------
+select * from VG69999.INTRANET_DEVICE where device_host_addr = '10.0.2.247'
+--update VG69999.INTRANET_DEVICE set device_host_name = '10.11.252.23' where device_host_addr = '10.0.2.247'
+--update VG69999.INTRANET_DEVICE set device_host_addr = '10.11.252.23' where device_host_addr = '10.0.2.247'
+---------------------------------------------------------------------------------------------------------------
+select * from VG69999.INTRANET_DEVICE where device_host_addr = '10.11.252.23'
+--update VG69999.INTRANET_DEVICE set device_host_name = '10.0.2.247' where device_host_addr = '10.11.252.23'
+--update VG69999.INTRANET_DEVICE set device_host_addr = '10.0.2.247' where device_host_addr = '10.11.252.23'
+---------------------------------------------------------------------------------------------------------------
+--Device's IP should not update
+--And set global IP in TenantConfig.xml for CardMode
+--Set staticIp for local provider
+----------------------------------------------------------------------------------------------------------------
+

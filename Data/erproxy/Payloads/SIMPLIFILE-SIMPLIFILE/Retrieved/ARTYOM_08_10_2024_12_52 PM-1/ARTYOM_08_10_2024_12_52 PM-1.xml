@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<RESPONSE_GROUP PRIAVersionIdentifier="2.4.1">
+  <RESPONSE ResponseDateTime="8/10/2024 5:52:11 AM">
+    <PRIA_RESPONSE>
+      <PACKAGE _Identifier="ARTYOM_08_10_2024_12_52 PM-1" _CountyFipsCode="51013">
+        <STATUS _Code="3" _Description="Rejected">
+          <_Message>Package was auto-rejected due to the document type cannot be eRecorded at this time. Please contact your eRecording vendor BEFORE re-submitting. Thanks!</_Message>
+        </STATUS>
+      </PACKAGE>
+    </PRIA_RESPONSE>
+  </RESPONSE>
+</RESPONSE_GROUP>

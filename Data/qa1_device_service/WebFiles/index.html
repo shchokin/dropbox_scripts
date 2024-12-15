@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+    <script src="./jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script>
+        $("document").ready(function () {
+            var isFirstTime = true;
+            var makeStatusCall = function () {
+                $.ajax({
+                    url: "/Statistic/Get", success: function (result) {
+                      
+                        var innerJobsHtml = "";
+                        result.Jobs.forEach(function (currentValue) {
+                            var tr = `<tr>
+                                <td>`+ currentValue.DeviceName + `</td>
+                                <td>`+ currentValue.JobId + `</td>
+                                <td>`+ currentValue.Host + `</td>
+                                <td>`+ currentValue.StepInfo + `</td>
+                              </tr>`;
+                            innerJobsHtml += tr;
+
+                        });
+
+                         
+                        var infoHtml = `<p> <b>Service Name :</b> ` + result.DeviceServiceName + `</p>
+                                <p> <b>Machine Name :</b> ` + result.MachineName + `</p>
+                                <p> <b>CRS Url :</b> ` + result.CrsUrl + `</p>
+                                <p> <b>Content Service Url :</b> ` + result.ContentServiceUrl + `</p>
+                                <p> <b>Signature Agent Url :</b> ` + result.SignaturePadService + `</p>
+                                <p> <b>Card Reader Agent Url :</b> ` + result.CardReaderService + `</p>`
+                        $("#tableBody").html(innerJobsHtml);
+                        if (isFirstTime)
+                        {
+                            $("#info").html(infoHtml);
+                            isFirstTime = false;
+                        }
+                        
+                        setTimeout(makeStatusCall, 5000);
+                    }
+                });
+            };
+            makeStatusCall();
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid" id="wrapper">
+    <div class="fleft" id="info">
+
+    </div>
+    <div class="container fleft">
+        <table id="devicesTable">
+            <caption>Device Service Information</caption>
+            <thead>
+            <tr>
+                <th>Device Name</th>
+                <th>Job Id</th>
+                <th>Host</th>
+                <th>State</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+          
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

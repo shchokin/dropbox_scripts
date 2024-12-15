@@ -1,0 +1,1 @@
+D:\Auto\kofile-automation\Kofile\venv3.10\Scripts\python.exe D:\Auto\kofile-automation\Kofile\projects\Kofile\tests\my_test\0_update_environment.py

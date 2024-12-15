@@ -1,0 +1,1 @@
+d=$(date +%s); for i in {1..5}; do cp ../../type_ds/1oit.xml "Artyom-$d-$i.xml"; done;cd ../.. ; start erProxyTester.exe ; cd --d --

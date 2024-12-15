@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kofile.Vanguard.CRS.BusinessEntities</name>
+    </assembly>
+    <members>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Capturing.OrderItemDetails">
+            <summary>
+            Class designed to store order item details which are needed on ScanAttachments screen
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity">
+            <summary>
+            The scanner task status data transfer object (DTO)
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity.ScannerId">
+            <summary>Gets or sets the scanner id.</summary>
+            <value>The scanner id.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity.ScannerStatus">
+            <summary>Gets or sets status for the scanner.</summary>
+            <value>The scanner status.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity.TaskId">
+            <summary>Gets or sets the task id.</summary>
+            <value>The task id.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity.TaskStatus">
+            <summary>Gets or sets status for the scanner task.</summary>
+            <value>The scanner task status.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity.BatchId">
+            <summary>Gets or sets the batch id.</summary>
+            <value>The batch id.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerStatusEntity.BatchStatus">
+            <summary>Gets or sets status for the scan batch.</summary>
+            <value>The scan batch status.</value>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerTaskStatusEntity">
+            <summary>
+            The scanner task status data transfer object (DTO)
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerTaskStatusEntity.ScannerTaskId">
+            <summary>Gets or sets the scanner task id.</summary>
+            <value>The scanner task id.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerTaskStatusEntity.Status">
+            <summary>Gets or sets a value indicating whether this <see cref="T:Kofile.Vanguard.CRS.BusinessEntities.Capturing.ScannerTaskStatusEntity"/> is status.</summary>
+            <value><c>true</c> if status; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Common.FailFinalizedOrderItemEntity.OrderItemId">
+            <summary>
+            Order Item Id
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Common.FailFinalizedOrderItemEntity.Step">
+            <summary>
+            In what stage there was a failure
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam">
+            <summary>
+            Class for defining image convert parameters(resolution change, watermark applying etc.)
+            </summary>
+        </member>
+        <member name="M:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.ToString">
+            <summary>
+            Override object method
+            </summary>
+            <returns>String representation of the class instance</returns>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.ImageFormat">
+            <summary>
+            Gets or sets a value that defines image format
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.PreLoads">
+            <summary>
+            Gets or sets a value that defines a pre-loaded document pages
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.Cropping">
+            <summary>
+            Gets or sets a value indicating whether cropping should be applied for any image
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.PageZones">
+            <summary>
+            Gets or sets a value that defines zones per page for cropping.   
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.CroppedImageDeliverySize">
+            <summary>
+            Gets or sets a value that defines delivery size of cropped image.  
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.Overlay">
+            <summary>
+            Gets or sets a value indicating whether watermark should be applied for any image
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.OverlayImagePath">
+            <summary>
+            Gets or sets a value that defines overlay image physical path
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.ChangeResolution">
+            <summary>
+            Gets or sets a value indicating whether resolution of image should be changed
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.Dpi">
+            <summary>
+            Gets or sets a value that defines DPI property for the image being processed
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.Dimension">
+            <summary>
+            Gets or sets a value that defines image dimensions
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.Distort">
+            <summary>
+            Gets or sets a value indicating whether distortion should be applied for any image.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.DistortAmount">
+            <summary>
+            Gets or sets a value that defines distort amount for any image.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.DistortScale">
+            <summary>
+             Gets or sets a value that defines scaling amount for distortion for any image.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.InputImageSize">
+            <summary>
+            Gets or sets a value that defines size of input PDF.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ConvertParam.OutputPdfSizeConfiguration">
+            <summary>
+            Gets or sets a value that defines size of output PDF.
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken">
+            <summary>
+            Content token which is used for transfering data to Content service
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.Source">
+            <summary>
+            Source storage
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.Destination">
+            <summary>
+            Destination storage
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.RequestData">
+            <summary>
+            Data from HttpRequest 
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.PageIndexes">
+            <summary>
+            List of page indexes
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.CombinedPages">
+            <summary>
+            List of pages to combine
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.ImageDetails">
+            <summary>
+            Image Details
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.ContentToken.DocumentViewerData">
+            <summary>
+            Data contains information about document image
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Content.StorageInfo">
+            <summary>
+            Main information about storage
+            Used to identify source and destination storages
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.StorageInfo.RootPathMappings">
+            <summary>
+            Mapping dictionary for configured paths (folders)
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Content.DocumentViewerData">
+            <summary>
+            Main data for document image
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Content.RequestData">
+            <summary>
+            Data from HttpRequest
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.RequestData.UserAgent">
+            <summary>
+            UserAgent data from HttpRequest
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.RequestData.Browser">
+            <summary>
+            Browser data from HttpRequest
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.RequestData.BrowserVersion">
+            <summary>
+            Browser Version data from HttpRequest
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.RequestData.BrowserType">
+            <summary>
+            Browser Type data from HttpRequest
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Content.RequestData.UserHostAddress">
+            <summary>
+            User Host Address from HttpRequest
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.PageZone">
+            <summary>
+            Describes page zone as defined by user.
+            </summary>
+        </member>
+        <member name="M:Kofile.Vanguard.CRS.BusinessEntities.PageZone.#ctor">
+            <summary>
+            Default parameterless constructor of the zone.
+            Required for serialization.
+            </summary>
+        </member>
+        <member name="M:Kofile.Vanguard.CRS.BusinessEntities.PageZone.#ctor(System.Int32,System.Drawing.Rectangle)">
+            <summary>
+            Default constructor of the zone.
+            </summary>
+            <param name="page">Page number</param>
+            <param name="rectangle">Rectangle with zone coordinates</param>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.PageZone.Page">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.PageZone.X">
+            <summary>
+            Left coordinate of the zone rectangle, pixels
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.PageZone.Y">
+            <summary>
+            Top coordinate of the zone rectangle, pixels
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.PageZone.Width">
+            <summary>
+            Width of the zone rectangle in pixels
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.PageZone.Height">
+            <summary>
+            Height of the zone rectangle in pixels
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.PageZone.IsEmpty">
+            <summary>
+            Gets a value indicating whether Width and Height of this  object has values of zero.
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel">
+            <summary>
+            The model of changes in document for applying.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel.PageOrder">
+            <summary>
+            Gets or sets the new page order.
+            </summary>
+            <value>The new page order.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel.DeletedPageNumbers">
+            <summary>
+            Gets or sets the numbers of pages for deleting.
+            </summary>
+            <value>The numbers of pages for deleting.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel.RotationData">
+            <summary>
+            Gets or sets collection of the numbers of pages and angles for rotation.
+            </summary>
+            <value>The rotation data (number of page and rotation angle).</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel.SplitData">
+            <summary>
+            Gets or sets the numbers of pages for split into new document.
+            </summary>
+            <value>The numbers of pages for split.</value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel.UpdatedPageCount">
+            <summary>
+            Gets or sets the number of affected pages.
+            </summary>
+            <value>
+            The number of affected pages.
+            </value>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Capturing.DocumentChangeStateViewModel.IsReprocessing">
+            <summary>
+            Gets or sets the is reprocessing.
+            </summary>
+            <value>The is reprocessing.</value>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Common.LocationEntity">
+            <summary>
+            Location Entity
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Common.OriginEntity">
+            <summary>
+            Origin Entity
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Common.SearchImageForDocumentModel.GroupDesc">
+            <summary>
+            This property is supposed to be used to get group for search
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Common.StateEntity">
+            <summary>
+            State Entity
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.DocModification.ResourceModificationEntity.AllowedTabsList">
+            <summary>
+            Tabs that are allowed for specific order item type
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Document.PartyType.Id">
+            <summary>
+            Type of Party coming from DB eg. 1,2,3 etc.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Document.PartyType.Description">
+            <summary>
+            Description Text of the Party eg. Grantor, Grantee, Bride etc.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Financial.FeeParameterCriteria.HasCoverPage">
+            <summary>
+            Comes from the Order Item Type Configuration(if the order item type has cover page)
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Financial.FeeParameterCriteria.NoOfPageFinal">
+            <summary>
+            Returns NoOfPage with the cover page if the order item type needs the cover page.
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Financial.FeeParameterCriteria.BillablePages">
+            <summary>
+            This Parameter returns No of Pages that needs to be payed. 
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.VerificationTaskActionReasonEntity">
+            <summary>
+            Verification Task Entity
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.VerificationTaskEntity">
+            <summary>
+            Verification Task Entity
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingBatch">
+            <summary>
+            Indexing batch object of kofile indexing service
+            Includes all related classes
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingBatch.Document">
+            <summary>
+            Document class
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingBatch.Error">
+            <summary>
+            Error class
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingBatch.LandRecord">
+            <summary>
+            LandRecord class
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingBatch.Legal">
+            <summary>
+            LandRecord class
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingBatch.RelatedDocument">
+            <summary>
+            RelatedDocument class
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingTaskActionReasonEntity">
+            <summary>
+            Indexing Task Entity
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.IndexingTaskEntity">
+            <summary>
+            Indexing Task Entity
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.AttachmentEntity.ContentFolder">
+            <summary>
+            Folder where attachment is stored
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Package.PackageSearchCriteria">
+            <summary>
+            Model class for package search criteria
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.OrderEntity.IsReEntryOrderExpired">
+            <summary>
+            Checking if num of days for re-entry order is expired or not
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.OrderEntity.IsRestore">
+            <summary>
+            is cancelled order was restored
+            </summary>
+        </member>
+        <member name="M:Kofile.Vanguard.CRS.BusinessEntities.OrderHistoryEntity.#ctor">
+            <remarks>Default constructor is requied for serialization.</remarks>>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.OrderSearchCriteria.CancelledStatusTimeOut">
+            <summary>
+            Getting time out for re entring cancelled orders
+            </summary>
+        </member>
+        <member name="T:Kofile.Vanguard.CRS.BusinessEntities.Order.SearchCriteriaLink">
+            <summary>
+            Order Search Criteria Link Attribute
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.SearchCriteriaLink.DisplayName">
+            <summary>
+            Display Name For Property
+            </summary>
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.ResourceEntity.ResourceExtension">
+            file format
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.ResourceEntity.StorageType">
+            storage type (blob, filesystem -> enum (map with DB))
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.ResourceEntity.Format">
+            format (enum)       document, image, ptypes (property types)        
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.ResourceEntity.LifeCycle">
+            resource life type (used by GC)    (WI)1463 - 1.3
+        </member>
+        <member name="P:Kofile.Vanguard.CRS.BusinessEntities.Order.ResourceEntity.ViewSecurity">
+             Resource(Image) view security 
+        </member>
+    </members>
+</doc>

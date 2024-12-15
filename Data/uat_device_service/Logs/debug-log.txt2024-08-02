@@ -1,0 +1,408 @@
+﻿2024-08-02 21:00:38,978 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Starting service
+2024-08-02 21:00:39,070 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Init Device Service Server
+2024-08-02 21:00:39,070 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Init Device Service
+2024-08-02 21:00:41,104 [1] DEBUG Kofile.Vanguard.Device.Service.ServiceManager [(null)] - Getting Tenant Configurations
+2024-08-02 21:00:41,149 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:00:41,150 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:00:41,185 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:00:41,188 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:00:41,335 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_c1527440-244f-47c6-b9c4-4350f5afbe42" IssueInstant="2024-08-02T18:00:41.202Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_c1527440-244f-47c6-b9c4-4350f5afbe42"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>morZaXk2thODPnB9ymkCogHDSFs=</DigestValue></Reference></SignedInfo><SignatureValue>DzqTp1UA9isdfcdA6I1mzBT0rdyh3BTEZ871n/XLbnmuWHQt7HGUo0kaji/bhHDyXUQtyIaQNzQxGUthn5q5297O0BfRHicm4s6l398HZY73cSlVYerUIOYadLeA9rpkoHmAxD+IQEXZpfcbwiIQZ/vdLvViMQLYwZPrvrhSUs7p97D910826bhJ/U37Otzs0zyg22HCpIl+E8SrYiMQCa9Klv3+/uevlCrCfwYNnGygAkAo5MO65gr+bAyP34f8Kl8S5aFHrsfaT3svw0DpnK8K7DurYj1+FHrIeRuedSan+ge3RqiVPmyWE7ItDojkq9gtxfthhOJ5CxpZgTMUIg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:00:36.150Z" NotOnOrAfter="2024-08-02T18:05:46.150Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:00:36.150Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:00:41,351 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:00:41,352 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:00:41,353 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:00:41,354 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:00:41,378 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_e25ff06b-39e9-4acf-94fa-d41ff23caa28" IssueInstant="2024-08-02T18:00:41.355Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_e25ff06b-39e9-4acf-94fa-d41ff23caa28"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>O32sXthArRJB9hhxr9AG9hJYKSM=</DigestValue></Reference></SignedInfo><SignatureValue>kCKp5shO1Oi4Lg4JiEr3p6KoZUw4FTB6J3+sS4CfzeW5bhp7QAiNQ71LfYhSy3F0nLsPMyPcaCdDX6CCPKYq+sPTdMmuRALnkan0l2eSFiQpgwW/8ih1ex/F5L3y8ybnAjO66KnOLG/YhWCul0wim3lsaYvfqkEhNIVXqEv3Dew8MdDsHluWidM5m03/iq0Kw3BamueCwuNfemra4SrimkW+MF8w6aFqlbVxRHcn76K04TUucbemCR9CVE/wz11QTa1Jw59Yd3qVs2QYuqsq6vpxpxHNzz2TNOo+G6wfqAPj31cJrDFiJXkz1s+5DqjKA64RncY7CLpRVc+JEE4XIQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:00:36.352Z" NotOnOrAfter="2024-08-02T18:05:46.352Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:00:36.352Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:00:41,474 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Common/GetTenantIntegration
+2024-08-02 21:00:42,607 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Starting Device Service 
+2024-08-02 21:00:42,614 [1] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__25 [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/ClearRecurringJobs
+
+2024-08-02 21:00:42,687 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Submitting to Url - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/ClearRecurringJobs?deviceServiceName=ArtyomVolo,
+  Object - null
+2024-08-02 21:00:43,282 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+2024-08-02 21:00:43,284 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+2024-08-02 21:00:43,326 [1] DEBUG Kofile.Vanguard.Device.Service.ServiceManager [(null)] - Starting Device Service: ArtyomVolo
+2024-08-02 21:00:43,327 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Starting Device Service Server
+2024-08-02 21:00:43,327 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - webServerUrl : http://*:8601/
+2024-08-02 21:00:43,329 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:00:43,330 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:00:43,774 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:00:48,775 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:00:48,775 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:00:49,204 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:00:54,206 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:00:54,207 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:00:54,632 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:00:59,634 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:00:59,635 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:00,081 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:05,083 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:05,084 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:05,579 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:10,580 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:10,581 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:11,038 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:16,040 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:16,040 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:16,473 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:21,475 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:21,476 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:21,924 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:26,926 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:26,927 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:27,352 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:32,353 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:32,354 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:32,787 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:37,788 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:37,789 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:38,219 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:43,220 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:43,221 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:43,647 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:48,650 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:48,651 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:49,077 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:54,078 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:54,078 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:54,527 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:01:59,529 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:01:59,529 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:01:59,959 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:04,961 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:04,961 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:05,390 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:10,392 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:10,392 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:10,821 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:15,822 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:15,823 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:16,247 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:21,248 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:21,248 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:21,698 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:26,700 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:26,700 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:27,159 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:32,160 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:32,161 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:32,646 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:37,648 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:37,648 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:38,116 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:43,118 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:43,119 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:43,718 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:48,719 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:48,720 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:49,159 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:54,161 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:54,162 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:02:54,590 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:02:59,591 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:02:59,592 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:00,020 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:05,021 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:05,021 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:05,468 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:10,469 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:10,470 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:10,917 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:15,918 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:15,919 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:16,348 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:21,351 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:21,351 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:21,799 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:26,800 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:26,801 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:27,255 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 1 jobs
+2024-08-02 21:03:27,255 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2+<>c__DisplayClass4 [(null)] - Execute pending job
+2024-08-02 21:03:27,322 [6] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:03:27,322 [6] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:03:27,326 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:03:27,326 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:03:27,349 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_b235b6e2-123e-4ddb-85eb-d088cab8aab8" IssueInstant="2024-08-02T18:03:27.327Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_b235b6e2-123e-4ddb-85eb-d088cab8aab8"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QlLnex3LN437OBFAn8SYjj9hruY=</DigestValue></Reference></SignedInfo><SignatureValue>U/sig9tYyGoueK0rPH6PDMHvabPJy0UUnjCBf+mlcxGfqgF8WmevpX/9Dgdfgkd3vs3xzV/0/2IpnHxnD1Y/KBb49+dwxSYNf5vqazF7yl9wOpoRK9So//DqlfMfuBWe46CLRT/UeXnGZmhDN5Axsvdgs4yQoB+VapRf2TMm+nhfjjXOrU72eiXMYCI/arIAjAR4gdCn97W2KFO2BVC3NT/Xj0a2wwFLv9exljwPTi7XvKRhm0CSkk2s1IGka+5L61uczcNcIZkQzJ9ZkcTM5UNRBAq+Ps1h06A/nBQyYtZiNfW8l9hgAnuxo+NGbQbNu+PDP5iXJm8f7ZcxdRiO9g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:03:22.324Z" NotOnOrAfter="2024-08-02T18:08:32.324Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:03:22.324Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:03:27,355 [6] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - Starting execution of job: 580
+2024-08-02 21:03:27,357 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - Starting GenericPrinterExecutor for DeviceJobId: 580
+2024-08-02 21:03:27,357 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - Download pdf started.
+2024-08-02 21:03:27,364 [6] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__16 [(null)] - http://content.uat-1.kofile.systems/api/ImageResource/GetPrintDocument
+------------User Information--------------------
+	UserId - Empty, 
+	UserName - Empty, 
+	UserLocationId - Empty, 
+	UserGroupId - Empty, 
+------------------------------------------------
+	ContentToken.FileName - 68456f9a-9d2a-43ff-8e19-3c45b4f490bc_Recorded_BurntLetter.pdf,
+	TenantCode - 48453,
+------------Source Information------------------
+	Source.ContentFolder - GenImages, 
+	Source.StorageFolder - GenImages, 
+	Source.StorageType - None, 
+	Source.FileName - , 
+------------Destination Information-------------
+	Destination.StorageType - None, 
+	Destination.ContentFolder - None, 
+	Destination.StorageFolder - None, 
+	Destination.FileName - , 
+------------DocumentViewer Data-------------
+	DocumentViewerData.Path - Empty, 
+	DocumentViewerData.BurnedTiffPath - Empty, 
+	DocumentViewerData.OrderItemEntity.OrderItemId - Empty, 
+------------DocumentViewer ImageResourceModel Data-------------
+	DocumentViewerData.ImageResourceModel.ContentFolder - Empty, 
+	DocumentViewerData.ImageResourceModel.StorageFolder - Empty, 
+------------ImageDetails Data-------------
+	ImageDetails.RelativePath - Empty, 
+------------SearchImageCriteria Data-------------
+	PathToFile - Empty,Empty
+2024-08-02 21:03:28,620 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - Download pdf finished.
+2024-08-02 21:03:28,632 [6] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was started: .
+2024-08-02 21:03:28,634 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - Printing to Generic printer 'Microsoft XPS Document Writer'
+2024-08-02 21:03:28,646 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - "Margins":"Top":0.1,"Bottom":0.1,"Left":0.1,"Right":0.1,"PageRange":"1-3","PaperSizeKind":1,"CombineEntire":[],"IsDuplex":false,"Copies":1,"FilePath":"68456f9a-9d2a-43ff-8e19-3c45b4f490bc_Recorded_BurntLetter.pdf","ContentFolder":16,"PdfTemplateId":0
+2024-08-02 21:03:28,661 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Printing pdf document started. Parameters: pdfFilePath - C:\Users\artyo\AppData\Local\Temp\tmp512A.tmp; printerName - Microsoft XPS Document Writer; pages - 1,2,3; paperSizeKind - Letter; Margins - Top - 0.1, Bottom - 0.1, Left - 0.1, Right - 0.1;
+2024-08-02 21:03:28,829 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetImagesToPrint method was started: .
+2024-08-02 21:03:29,024 [10] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPrintImage method was started: .
+2024-08-02 21:03:29,025 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPrintImage method was started: .
+2024-08-02 21:03:29,026 [16] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPrintImage method was started: .
+2024-08-02 21:03:29,026 [10] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Actual pdf page size - 8.50*11.00 inch. resized pdf page size - 8.50*11.00 inch. Paper size - Letter.
+2024-08-02 21:03:29,026 [16] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Actual pdf page size - 8.50*11.00 inch. resized pdf page size - 8.50*11.00 inch. Paper size - Letter.
+2024-08-02 21:03:29,026 [6] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Actual pdf page size - 8.50*11.00 inch. resized pdf page size - 8.50*11.00 inch. Paper size - Letter.
+2024-08-02 21:03:29,027 [10] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Assembly name - Kofile.Vanguard.PrintService.GenericPrinter, Assembly version - 3.0.1.704.
+2024-08-02 21:03:29,027 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Assembly name - Kofile.Vanguard.PrintService.GenericPrinter, Assembly version - 3.0.1.704.
+2024-08-02 21:03:29,028 [16] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Assembly name - Kofile.Vanguard.PrintService.GenericPrinter, Assembly version - 3.0.1.704.
+2024-08-02 21:03:29,233 [16] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPrintImage method was ended.
+2024-08-02 21:03:29,233 [10] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPrintImage method was ended.
+2024-08-02 21:03:29,233 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPrintImage method was ended.
+2024-08-02 21:03:29,236 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetImagesToPrint method was ended and took: 405 ms.
+2024-08-02 21:03:29,239 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GeneratePrintDocument method was started: .
+2024-08-02 21:03:29,340 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPaperSize method was started: .
+2024-08-02 21:03:29,341 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Paper size deviation - 0, paperSizeKind - Letter, document page Size - 8.5*11.
+2024-08-02 21:03:29,342 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Paper size - Letter
+2024-08-02 21:03:29,342 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GetPaperSize method was ended.
+2024-08-02 21:03:29,352 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Printer configuration: name - Microsoft XPS Document Writer, duplex - Simplex, paper size - [PaperSize Letter Kind=Letter Height=1100 Width=850], copies - 1, margins - [Margins Left=10 Right=10 Top=10 Bottom=10].
+2024-08-02 21:03:29,353 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- GeneratePrintDocument method was ended and took: 105 ms.
+2024-08-02 21:03:29,353 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Printing pdf document started.
+2024-08-02 21:03:32,256 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:32,256 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:32,713 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:35,555 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- PrintDocument_PrintPage method was started: .
+2024-08-02 21:03:35,556 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Applying margins for page 1 started.
+2024-08-02 21:03:35,556 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Applying margins  for page 1 finished.
+2024-08-02 21:03:35,556 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Draw image of page 1 started. Image dimensions: 8.50 * 11.00 inch.
+2024-08-02 21:03:35,602 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Draw image of page 1 finished.
+2024-08-02 21:03:35,605 [6] DEBUG System.Drawing.Printing.PrintDocument [(null)] - ----- OnPrintPage method was ended and took: 48 ms.
+2024-08-02 21:03:35,834 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- PrintDocument_PrintPage method was started: .
+2024-08-02 21:03:35,836 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Applying margins for page 2 started.
+2024-08-02 21:03:35,849 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Applying margins  for page 2 finished.
+2024-08-02 21:03:35,858 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Draw image of page 2 started. Image dimensions: 8.50 * 11.00 inch.
+2024-08-02 21:03:35,908 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Draw image of page 2 finished.
+2024-08-02 21:03:35,909 [6] DEBUG System.Drawing.Printing.PrintDocument [(null)] - ----- OnPrintPage method was ended and took: 74 ms.
+2024-08-02 21:03:36,008 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - ----- PrintDocument_PrintPage method was started: .
+2024-08-02 21:03:36,009 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Applying margins for page 3 started.
+2024-08-02 21:03:36,009 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Applying margins  for page 3 finished.
+2024-08-02 21:03:36,010 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Draw image of page 3 started. Image dimensions: 8.50 * 11.00 inch.
+2024-08-02 21:03:36,056 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Draw image of page 3 finished.
+2024-08-02 21:03:36,057 [6] DEBUG System.Drawing.Printing.PrintDocument [(null)] - ----- OnPrintPage method was ended and took: 48 ms.
+2024-08-02 21:03:36,103 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.PdfPrinter [(null)] - Printing pdf document finished and took 6749 ms.
+2024-08-02 21:03:36,104 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - Printing to Generic printer 'Microsoft XPS Document Writer' status is True
+2024-08-02 21:03:36,152 [6] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- DeleteTemporaryFile method was started: .
+2024-08-02 21:03:36,155 [6] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Start DeleteFileAsync method: C:\Users\artyo\AppData\Local\Temp\tmp512A.tmp.
+2024-08-02 21:03:36,156 [6] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Try to delete current file async C:\Users\artyo\AppData\Local\Temp\tmp512A.tmp.
+2024-08-02 21:03:36,157 [6] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was ended.
+2024-08-02 21:03:36,158 [6] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was ended.
+2024-08-02 21:03:36,158 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Try to delete all other prepared to delete files from path: C:\Users\artyo\AppData\Local\Temp\tmp512A.tmp.
+2024-08-02 21:03:36,160 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Start DeleteMarkedFiles method, delete all marked/original files in C:\Users\artyo\AppData\Local\Temp\tmp512A.tmp
+2024-08-02 21:03:36,160 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Get all marked and original files from directory: C:\Users\artyo\AppData\Local\Temp.
+2024-08-02 21:03:36,162 [6] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - ----- UpdateJobStatus method was started: Updating DeviceJobId: 580, with status Success.
+2024-08-02 21:03:36,163 [6] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - try to Post /api/Device/UpdateDeviceJobStatus
+2024-08-02 21:03:36,165 [6] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__f [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/UpdateDeviceJobStatus
+Kofile.Vanguard.CRS.BusinessEntities.Device.DeviceJobEntity
+2024-08-02 21:03:36,194 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Try to delete all marked and original files by path: C:\Users\artyo\AppData\Local\Temp\tmp512A.tmp.
+2024-08-02 21:03:37,021 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - ----- DoExecute method was ended.
+2024-08-02 21:03:37,022 [6] DEBUG Kofile.Vanguard.PrintService.GenericPrinter.GenericPrinter [(null)] - GenericPrinterExecutor for DeviceJobId: 580 was finished and took 9664 ms.
+2024-08-02 21:03:37,023 [6] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - Finished execution of job: 580
+2024-08-02 21:03:37,715 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:37,715 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:38,171 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:43,172 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:43,172 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:43,599 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:48,602 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:48,602 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:49,032 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:03:54,034 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:03:54,036 [7] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:03:54,455 [7] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:05:40,885 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Starting service
+2024-08-02 21:05:40,907 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Init Device Service Server
+2024-08-02 21:05:40,907 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Init Device Service
+2024-08-02 21:05:40,968 [1] DEBUG Kofile.Vanguard.Device.Service.ServiceManager [(null)] - Getting Tenant Configurations
+2024-08-02 21:05:41,003 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:05:41,004 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:05:41,026 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:05:41,031 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:05:41,145 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_7c84aad3-9c94-4d0c-ba33-a1b44bbe7c4c" IssueInstant="2024-08-02T18:05:41.044Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_7c84aad3-9c94-4d0c-ba33-a1b44bbe7c4c"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>UWPaNDWtftZeUk4N8elDc44iPFU=</DigestValue></Reference></SignedInfo><SignatureValue>d1CayvdGKKVVLg9eIqyHIqOHBHuSblZ3R7nH8MD6hMwlVdpV4rUKM7S8zUfJv9pIXWJdUIMv6GHnMLnumDgzDh+sEWVPo+TefHnsb9CISxhEY6JUFOXYYlc3OHKvKVgeeo+ZYSfsh9yzm4Kj5zV1Li7XkHoozYGxm9sDI/VVFqCcakWJSbEeVeqjW8lPZdGpq0e6sc01kabQQYWNs/VboV7fxaVm1AUIIvgk40VBV7QMaLGCgvCsQysop/8COpMpwjam8GQc2AOd9MyILTB0uKG213XoftWcB1WJDrMFonTAIIiC28Mc/UNGDDSxC3M+ufNa7CDjU5PebNA4TM22og==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:05:36.005Z" NotOnOrAfter="2024-08-02T18:10:46.005Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:05:36.005Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:05:41,160 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:05:41,161 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:05:41,162 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:05:41,163 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:05:41,187 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_6da76282-8f88-4fc2-a681-61daed976648" IssueInstant="2024-08-02T18:05:41.163Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_6da76282-8f88-4fc2-a681-61daed976648"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>p+uDE45iGXXl7R35GjKjpZo3iTU=</DigestValue></Reference></SignedInfo><SignatureValue>SYKu3kaSHC7Iy9fU1im8gMgZ9n6nKEKNsI/NhwO8lnbuv+LX8b7/hdcw4yxyl5MvYORQoLfzQ2btlxiXhrtnQtz6oAicVvOBfym/zabQRwfWBjA3Y6vOxr5pXG9Y2oLQyyZML61nZWYSv7VDLYSo2dThOzB+igIi0o0mdoBrqmVGf4FbSGfZqrz85KLgYWM9eEsex3kQOX6mGn4z0eyXbYvFh4qQn3P+43U1rP2mDCiXKC8KVonjJtBSNWmwGlyS1xLBF+8pdb1HBpgO2XhEh1cn/rAOi+pi2X+mOCEJhFFOojWPrpWHufCCroYpeRuan3n3IicN/l43h51fayKlcg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:05:36.162Z" NotOnOrAfter="2024-08-02T18:10:46.162Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:05:36.162Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:05:41,196 [1] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Common/GetTenantIntegration
+2024-08-02 21:05:42,145 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Starting Device Service 
+2024-08-02 21:05:42,151 [1] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__25 [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/ClearRecurringJobs
+
+2024-08-02 21:05:42,188 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Submitting to Url - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/ClearRecurringJobs?deviceServiceName=ArtyomVolo,
+  Object - null
+2024-08-02 21:05:42,781 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+2024-08-02 21:05:42,782 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+2024-08-02 21:05:42,790 [1] DEBUG Kofile.Vanguard.Device.Service.ServiceManager [(null)] - Starting Device Service: ArtyomVolo
+2024-08-02 21:05:42,790 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Starting Device Service Server
+2024-08-02 21:05:42,791 [1] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - webServerUrl : http://*:8601/
+2024-08-02 21:05:42,792 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:05:42,793 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:05:43,250 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 1 jobs
+2024-08-02 21:05:43,251 [10] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2+<>c__DisplayClass4 [(null)] - Execute pending job
+2024-08-02 21:05:43,279 [10] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:05:43,280 [10] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:05:43,281 [10] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:05:43,282 [10] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:05:43,305 [10] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_1a007d32-8101-4914-8e63-7160d5184077" IssueInstant="2024-08-02T18:05:43.283Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_1a007d32-8101-4914-8e63-7160d5184077"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>kj3ZJ78ta4OLG7d2jUAxDDQEYrM=</DigestValue></Reference></SignedInfo><SignatureValue>qy83Gf8tuS2XU4LDV3dpQ8OtvOhGTsfWs25XvYfLlKNyCkQyCG+UYYB9AYMv/M1lI2jkQb1VNuH/k0ZjBQ2tF3Xl5XBLIODy8Tv/uZzdFq1mpebao9lTIVDqYmS37DKDYX00TUzZwzyXdlw17Yqr131tWs/cb2x3DWP+MkGhta/sGdutyO6FOAgHEwwofAV7Eg5YQMP2wfyE/xDxamuHufMngP38DTdZoCOANkSiqLd9YSwaWJJMPUW0iqLvxeoeEbWdNYiWMbzLpkgMMStg4WHumoelf6MPrEeIkeR4gEhFzvpGlHoUgTrCcg6b5A0Up65gOZIQXtrmaGvdlQce7g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:05:38.281Z" NotOnOrAfter="2024-08-02T18:10:48.281Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:05:38.281Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:05:43,310 [10] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - Starting execution of job: 577
+2024-08-02 21:05:43,312 [10] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - Starting ReceiptPrinterExecutor for DeviceJobId: 577
+2024-08-02 21:05:43,318 [10] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__16 [(null)] - http://content.uat-1.kofile.systems/api/ImageResource/GetPrintDocument
+------------User Information--------------------
+	UserId - Empty, 
+	UserName - Empty, 
+	UserLocationId - Empty, 
+	UserGroupId - Empty, 
+------------------------------------------------
+	ContentToken.FileName - EpsonRecieptPrinterConfig_7_1422_797076e3-c2dd-4ca6-87e0-bcba003b644f.txt,
+	TenantCode - 48453,
+------------Source Information------------------
+	Source.ContentFolder - PrintDocuments, 
+	Source.StorageFolder - PrintDocuments, 
+	Source.StorageType - None, 
+	Source.FileName - , 
+------------Destination Information-------------
+	Destination.StorageType - None, 
+	Destination.ContentFolder - None, 
+	Destination.StorageFolder - None, 
+	Destination.FileName - , 
+------------DocumentViewer Data-------------
+	DocumentViewerData.Path - Empty, 
+	DocumentViewerData.BurnedTiffPath - Empty, 
+	DocumentViewerData.OrderItemEntity.OrderItemId - Empty, 
+------------DocumentViewer ImageResourceModel Data-------------
+	DocumentViewerData.ImageResourceModel.ContentFolder - Empty, 
+	DocumentViewerData.ImageResourceModel.StorageFolder - Empty, 
+------------ImageDetails Data-------------
+	ImageDetails.RelativePath - Empty, 
+------------SearchImageCriteria Data-------------
+	PathToFile - Empty,Empty
+2024-08-02 21:05:44,529 [10] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was started: .
+2024-08-02 21:05:44,533 [10] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - Printing to receipt printer 'Receipt Printer'
+2024-08-02 21:05:44,541 [10] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - Printing to receipt printer 'Receipt Printer' status is False
+2024-08-02 21:05:44,543 [10] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- DeleteTemporaryFile method was started: .
+2024-08-02 21:05:44,545 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Start DeleteFileAsync method: C:\Users\artyo\AppData\Local\Temp\tmp640D.tmp.
+2024-08-02 21:05:44,546 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Try to delete current file async C:\Users\artyo\AppData\Local\Temp\tmp640D.tmp.
+2024-08-02 21:05:44,547 [11] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Try to delete all other prepared to delete files from path: C:\Users\artyo\AppData\Local\Temp\tmp640D.tmp.
+2024-08-02 21:05:44,547 [10] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was ended.
+2024-08-02 21:05:44,548 [10] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was ended.
+2024-08-02 21:05:44,549 [11] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Start DeleteMarkedFiles method, delete all marked/original files in C:\Users\artyo\AppData\Local\Temp\tmp640D.tmp
+2024-08-02 21:05:44,549 [10] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - ----- UpdateJobStatus method was started: Updating DeviceJobId: 577, with status Failed.
+2024-08-02 21:05:44,550 [11] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Get all marked and original files from directory: C:\Users\artyo\AppData\Local\Temp.
+2024-08-02 21:05:44,551 [10] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - try to Post /api/Device/UpdateDeviceJobStatus
+2024-08-02 21:05:44,554 [11] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Try to delete all marked and original files by path: C:\Users\artyo\AppData\Local\Temp\tmp640D.tmp.
+2024-08-02 21:05:44,554 [10] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__f [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/UpdateDeviceJobStatus
+Kofile.Vanguard.CRS.BusinessEntities.Device.DeviceJobEntity
+2024-08-02 21:05:45,412 [10] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - ----- DoExecute method was ended.
+2024-08-02 21:05:45,412 [10] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - ----- DoExecute method was ended.
+2024-08-02 21:05:45,413 [10] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - Finished execution of job: 577
+2024-08-02 21:05:48,250 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:05:48,251 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:05:48,680 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 1 jobs
+2024-08-02 21:05:48,681 [11] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2+<>c__DisplayClass4 [(null)] - Execute pending job
+2024-08-02 21:05:48,686 [11] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - init webapihelper
+2024-08-02 21:05:48,686 [11] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - WebAPIClientHelper initialization: with parameters Agent=VOLO-DC\artyom.shchokin, WorkstationName=10.0.2.247, WorkskationIP=10.0.2.247, Tenant=48453.
+2024-08-02 21:05:48,687 [11] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - certPath is: D:\Dropbox\Kofile\dropbox_scripts\Data\uat_device_service\App_Data\Certificates\CSO.pfx
+2024-08-02 21:05:48,688 [11] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - Claims: System.Collections.Generic.Dictionary`2[System.String,System.String]
+2024-08-02 21:05:48,711 [11] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - token2Xml: <Assertion ID="_ac2afe60-4ad8-43d4-8f85-2ea7fd05de88" IssueInstant="2024-08-02T18:05:48.689Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>Vanguard</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#_ac2afe60-4ad8-43d4-8f85-2ea7fd05de88"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>6EnhvL9pqwBuTAbfTJ3NbFshDSo=</DigestValue></Reference></SignedInfo><SignatureValue>KNa7KRWL65E2gwEg/WzNqkXp25LPg23v4b96672rHkLjecAat5EFUzyJo9TnwGXWXhp7QnSKFq8t5kXG/Gwz8VR2QEFcD5DUO6oHe0ev8f5kCvUS793g+RkfaoFA+X5wanOdPDAa+LaVaWC3p3jGfnjHp+72Q/9QuodT5Gc1/Z9XEx1Wz0qN4LZgpph6eM5VKu7BXKSjra+020XtPR26/BY5zJZYLZKZVcwAsATbpe3pGM5SL+dEx4nEjCwc0ib6A2LNc7niaq1GvEAwHjq8R7NrmIGuMvw2F2ZttyOQXwfEYQsjermvVJfw15XCCEOywtIciyIQCF5YqKvNT6HB0Q==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sFnGqTEH7E9cTf0pggpxg19cPEcTG/QokRJ2EJxmcg1pw/sPlmowexvmIQhTabQoaKTXXgTAKCjhyfPcEMEITDWxsAqWGx7N8HdrZUtX5Ikn2t2E0UlKdJE8GdAAd/tGXRlrKq/8a9qGpvrDXJE6NHPRLRkJxvJH4A+C0pGEyVWLahWWnNZNotch/3dGyxFpXE95YWxqjJGp0il0rZqA27W2FLFLU0B92ut1rPOjOxzZSI+i5ciWoy+XW5dGiVyznp3K7Tn5QpqfQCOPaOKFhe/upGxN4zKUgJ+K72GarRdwXxPW6jy5qrTbyaVpz3uWihW3YpnK/iTVx00G2V03RQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature><Subject><NameID>Vanguard Agent Claim</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" /></Subject><Conditions NotBefore="2024-08-02T18:05:43.687Z" NotOnOrAfter="2024-08-02T18:10:53.687Z" /><AttributeStatement><Attribute Name="WorkStationName"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="WorkStationIP"><AttributeValue>10.0.2.247</AttributeValue></Attribute><Attribute Name="AgentName"><AttributeValue>VOLO-DC\artyom.shchokin</AttributeValue></Attribute><Attribute Name="ServerName"><AttributeValue>ARTYOM-PC</AttributeValue></Attribute><Attribute Name="ServerIP"><AttributeValue>fe80::fc07:8765:9538:4ec0%18</AttributeValue></Attribute><Attribute Name="TenantCode"><AttributeValue>48453</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2024-08-02T18:05:43.687Z"><AuthnContext><AuthnContextClassRef>urn:none</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+2024-08-02 21:05:48,717 [11] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - Starting execution of job: 578
+2024-08-02 21:05:48,717 [11] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - Starting ReceiptPrinterExecutor for DeviceJobId: 578
+2024-08-02 21:05:48,717 [11] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__16 [(null)] - http://content.uat-1.kofile.systems/api/ImageResource/GetPrintDocument
+------------User Information--------------------
+	UserId - Empty, 
+	UserName - Empty, 
+	UserLocationId - Empty, 
+	UserGroupId - Empty, 
+------------------------------------------------
+	ContentToken.FileName - EpsonRecieptPrinterConfig_7_1422_abe37026-19b7-4789-b45f-2be620ab8d7e.txt,
+	TenantCode - 48453,
+------------Source Information------------------
+	Source.ContentFolder - PrintDocuments, 
+	Source.StorageFolder - PrintDocuments, 
+	Source.StorageType - None, 
+	Source.FileName - , 
+------------Destination Information-------------
+	Destination.StorageType - None, 
+	Destination.ContentFolder - None, 
+	Destination.StorageFolder - None, 
+	Destination.FileName - , 
+------------DocumentViewer Data-------------
+	DocumentViewerData.Path - Empty, 
+	DocumentViewerData.BurnedTiffPath - Empty, 
+	DocumentViewerData.OrderItemEntity.OrderItemId - Empty, 
+------------DocumentViewer ImageResourceModel Data-------------
+	DocumentViewerData.ImageResourceModel.ContentFolder - Empty, 
+	DocumentViewerData.ImageResourceModel.StorageFolder - Empty, 
+------------ImageDetails Data-------------
+	ImageDetails.RelativePath - Empty, 
+------------SearchImageCriteria Data-------------
+	PathToFile - Empty,Empty
+2024-08-02 21:05:49,739 [11] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was started: .
+2024-08-02 21:05:49,741 [11] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - Printing to receipt printer 'Receipt Printer'
+2024-08-02 21:05:49,748 [11] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - Printing to receipt printer 'Receipt Printer' status is False
+2024-08-02 21:05:49,749 [11] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- DeleteTemporaryFile method was started: .
+2024-08-02 21:05:49,749 [11] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Start DeleteFileAsync method: C:\Users\artyo\AppData\Local\Temp\tmp7861.tmp.
+2024-08-02 21:05:49,750 [11] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Try to delete current file async C:\Users\artyo\AppData\Local\Temp\tmp7861.tmp.
+2024-08-02 21:05:49,750 [11] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was ended.
+2024-08-02 21:05:49,751 [11] DEBUG Kofile.Vanguard.PrintService.Common.BasePrinterExecutor [(null)] - ----- Print method was ended.
+2024-08-02 21:05:49,751 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner+<DeleteFileAsync>d__4 [(null)] - Try to delete all other prepared to delete files from path: C:\Users\artyo\AppData\Local\Temp\tmp7861.tmp.
+2024-08-02 21:05:49,752 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Start DeleteMarkedFiles method, delete all marked/original files in C:\Users\artyo\AppData\Local\Temp\tmp7861.tmp
+2024-08-02 21:05:49,751 [11] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - ----- UpdateJobStatus method was started: Updating DeviceJobId: 578, with status Failed.
+2024-08-02 21:05:49,753 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Get all marked and original files from directory: C:\Users\artyo\AppData\Local\Temp.
+2024-08-02 21:05:49,753 [11] INFO  Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - try to Post /api/Device/UpdateDeviceJobStatus
+2024-08-02 21:05:49,754 [11] DEBUG Kofile.Vanguard.Common.WebApiClient+<PostJson>d__f [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/UpdateDeviceJobStatus
+Kofile.Vanguard.CRS.BusinessEntities.Device.DeviceJobEntity
+2024-08-02 21:05:49,755 [10] DEBUG Kofile.Vanguard.TempFileCleaner.TempFileCleaner [(null)] - Try to delete all marked and original files by path: C:\Users\artyo\AppData\Local\Temp\tmp7861.tmp.
+2024-08-02 21:05:50,576 [11] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - ----- DoExecute method was ended.
+2024-08-02 21:05:50,576 [11] DEBUG Kofile.Vanguard.PrintService.ReceiptPrinter.ReceiptPrinter [(null)] - ----- DoExecute method was ended.
+2024-08-02 21:05:50,577 [11] DEBUG Kofile.Vanguard.Device.Infrastructure.BaseJobExecutor [(null)] - Finished execution of job: 578
+2024-08-02 21:05:53,682 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:05:53,682 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:05:54,109 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs
+2024-08-02 21:05:59,111 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get Device jobs
+2024-08-02 21:05:59,112 [6] DEBUG Kofile.Vanguard.Common.WebApiClient [(null)] - http://crs.uat-1.kofile.systems/48453/CRS Agent/api/Device/GetJobs
+2024-08-02 21:05:59,579 [6] DEBUG Kofile.Vanguard.Device.Service.ServiceManager+<>c__DisplayClass2 [(null)] - Get 0 jobs

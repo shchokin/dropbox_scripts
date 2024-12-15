@@ -1,0 +1,1 @@
+C:\Users\artyom.shchokin\PycharmProjects\scripts\venv\Scripts\python.exe C:/Users/artyom.shchokin/PycharmProjects/scripts/QA_69999_Change_Loc_Ug.py

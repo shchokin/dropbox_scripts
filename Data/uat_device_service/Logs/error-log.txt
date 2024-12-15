@@ -1,0 +1,479 @@
+﻿2022-09-21 11:10:50,212 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2022-09-21 11:10:50,215 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2022-09-21 11:10:50,676 [5] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.Exception: Request authorization exception has been thrown: status code is 'Forbidden', reason - 'Getting device jobs of Artyom device service is forbidden for workstation ARTYOM-PC'.
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 247
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+
+2022-09-21 11:10:56,021 [5] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.Exception: Request authorization exception has been thrown: status code is 'Forbidden', reason - 'Getting device jobs of Artyom device service is forbidden for workstation ARTYOM-PC'.
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 247
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+
+2022-09-21 11:14:47,042 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2022-09-21 11:14:47,043 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2022-09-21 11:34:07,464 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2022-09-21 11:34:07,467 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2022-09-21 11:46:01,936 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2022-09-21 11:46:01,938 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2022-09-21 11:48:59,802 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2022-09-21 11:48:59,803 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2022-09-21 20:03:20,935 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2022-09-21 20:03:20,937 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2023-06-19 12:05:33,159 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2023-06-19 12:05:33,162 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2023-06-19 12:09:09,368 [6] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 239
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+
+2023-06-19 12:12:07,055 [6] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 239
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+
+2023-06-19 12:29:49,642 [6] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 239
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+
+2023-06-19 12:43:12,743 [6] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 239
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+
+2023-06-19 14:03:11,832 [6] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Common.WebApiClient.Get[T](String methodUrl, List`1 parameters) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 239
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.GetJobs(String deviceServiceName, String workstationName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 28
+   at Kofile.Vanguard.Device.Service.ServiceManager.<>c__DisplayClass2.<Start>b__0() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 89
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 13.91.103.89:80
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+
+2023-12-04 16:50:06,732 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2023-12-04 16:50:06,734 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-02 21:00:43,282 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-02 21:00:43,284 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-02 21:05:42,781 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-02 21:05:42,782 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-04 19:47:08,216 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-04 19:47:08,217 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-05 12:05:46,182 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-05 12:05:46,184 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-05 12:06:47,492 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-05 12:06:47,493 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-05 12:29:23,448 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-05 12:29:23,449 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-08-05 13:17:50,011 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-08-05 13:17:50,014 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-09-16 13:15:38,204 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-09-16 13:15:38,205 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-09-16 13:15:38,914 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - Service Stoped : {0}
+
+2024-09-16 13:15:38,915 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Net.HttpListenerException: Access is denied
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at Microsoft.Owin.Host.HttpListener.OwinHttpListener.Start(HttpListener listener, Func`2 appFunc, IList`1 addresses, IDictionary`2 capabilities, Func`2 loggerFactory)
+   at Microsoft.Owin.Host.HttpListener.OwinServerFactory.Create(Func`2 app, IDictionary`2 properties)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Owin.Hosting.ServerFactory.ServerFactoryAdapter.Create(IAppBuilder builder)
+   at Microsoft.Owin.Hosting.Engine.HostingEngine.Start(StartContext context)
+   at Microsoft.Owin.Hosting.Starter.HostingStarter.Start(StartOptions options)
+   at Kofile.Vanguard.Device.Service.WindowsHost.Service.OnStart(String[] args) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service.WindowsHost\Service.cs:line 35
+
+2024-09-16 13:15:38,925 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Net.HttpListenerException: Access is denied
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at Microsoft.Owin.Host.HttpListener.OwinHttpListener.Start(HttpListener listener, Func`2 appFunc, IList`1 addresses, IDictionary`2 capabilities, Func`2 loggerFactory)
+   at Microsoft.Owin.Host.HttpListener.OwinServerFactory.Create(Func`2 app, IDictionary`2 properties)
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Owin.Hosting.ServerFactory.ServerFactoryAdapter.Create(IAppBuilder builder)
+   at Microsoft.Owin.Hosting.Engine.HostingEngine.Start(StartContext context)
+   at Microsoft.Owin.Hosting.Starter.HostingStarter.Start(StartOptions options)
+   at Kofile.Vanguard.Device.Service.WindowsHost.Service.OnStart(String[] args) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service.WindowsHost\Service.cs:line 40
+   at Kofile.Vanguard.Device.Service.WindowsHost.Service.Main(String[] args) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service.WindowsHost\Service.cs:line 94
+
+2024-09-16 13:16:15,726 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-09-16 13:16:15,728 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-09-16 13:39:36,958 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-09-16 13:39:36,960 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-09-16 13:43:13,539 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-09-16 13:43:13,540 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-09-16 13:44:42,942 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-09-16 13:44:42,945 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+
+2024-09-17 14:26:15,169 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - ClearRecurringJobs failed
+
+2024-09-17 14:26:15,171 [1] ERROR Kofile.Vanguard.Infrastructure.Logging.Logger [(null)] - 
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Kofile.Vanguard.Device.Interface.DeviceServiceWebApiClient.ClearRecurringJobs(String deviceServiceName) in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Interface\DeviceServiceWebApiClient.cs:line 109
+   at Kofile.Vanguard.Device.Service.ServiceManager.Start() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Device.Service\ServiceManager.cs:line 73
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Kofile.Vanguard.Common.WebApiClient.<PostJson>d__25.MoveNext() in d:\TeamCity\BuildAgent3\work\a0589f702e7489a5\src\Kofile.Vanguard.Common\WebAPIClient.cs:line 194<---
+
+

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScannerService>
+  <Scanners>
+    <Scanner>
+      <IsNotifying>true</IsNotifying>
+      <ScannerId>74</ScannerId>
+      <ScannerName>XPCTWAIN TIFF/JPEG Scanner</ScannerName>  
+    </Scanner>    
+  </Scanners>
+</ScannerService>

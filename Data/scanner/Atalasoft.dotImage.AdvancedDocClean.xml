@@ -1,0 +1,1294 @@
+<doc>
+  <assembly>
+    <name>Atalasoft.dotImage.AdvancedDocClean</name>
+  </assembly>
+  <members>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand">
+      <remarks>
+        <para>Unlike <c>AutoBorderCropCommand</c>, black border pixels will be turned to white instead of
+ being cropped off.</para>
+        <para>This command also differs from the <STRONG>BorderRemovalCommand</STRONG> included with DotImage Document
+ Imaging, which is a simpler version of <STRONG>AutoBorderCropCommand</STRONG>.</para>
+      </remarks>
+      <summary> Automatically removes black borders from a bi-tonal image using a sophisticated object detection
+ algorithm. </summary>
+      <see> AutoBorderCropCommand Class </see>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand._ctor">
+      <summary> Creates a new instance of <STRONG>AdvancedBorderRemovalCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.MinBorderThickness">
+      <summary> Gets or sets the minimum border thickness, in pixels, that will be removed. </summary>
+      <remarks> Default value is 5. </remarks>
+      <exception> Raised when value is less than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.MinBorderThickness">
+      <summary> Gets or sets the minimum border thickness, in pixels, that will be removed. </summary>
+      <remarks> Default value is 5. </remarks>
+      <exception> Raised when value is less than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.MaxBorderThickness">
+      <summary> Gets or sets the maximum border thickness, in pixels, that will be removed. </summary>
+      <remarks> Default value is 50. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.MaxBorderThickness">
+      <summary> Gets or sets the maximum border thickness, in pixels, that will be removed. </summary>
+      <remarks> Default value is 50. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.Denoise">
+      <summary> When true, will denoise the image prior to detecting the border. </summary>
+      <remarks> Default value is false.  When set to true, there is a lower chance of removing useful data when the image
+ is highly noised. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.Denoise">
+      <summary> When true, will denoise the image prior to detecting the border. </summary>
+      <remarks> Default value is false.  When set to true, there is a lower chance of removing useful data when the image
+ is highly noised. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+      <remarks> This property is auto configurable.  It will have no effect on the image if <c>AutoPropertyConfigurationEnabled</c> is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+      <remarks> This property is auto configurable.  It will have no effect on the image if <c>AutoPropertyConfigurationEnabled</c> is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.AutoPropertyConfigurationEnabled">
+      <summary> Gets or sets a value indicating if properties in the <c>AdvancedBorderRemovalCommand.PropertiesToAutoConfigure</c> property will be automatically determined by the
+ command when processed. </summary>
+      <remarks> Set this to false when hand tweaking auto configurable properties.  Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.AutoPropertyConfigurationEnabled">
+      <summary> Gets or sets a value indicating if properties in the <c>AdvancedBorderRemovalCommand.PropertiesToAutoConfigure</c> property will be automatically determined by the
+ command when processed. </summary>
+      <remarks> Set this to false when hand tweaking auto configurable properties.  Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AdvancedBorderRemovalCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.BinarizeMethod">
+      <summary> Lists the supported binarization methods used in the <c>BinarizeCommand</c></summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.BinarizeMethod.SimpleThreshold">
+      <summary> Simple, fast thresholding with level determined by user. </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.BinarizeMethod.GlobalThreshold">
+      <summary> Threshold level determined from entire image.  Useful for removing shaded regions, but could remove light
+ colored content such as watermarks. </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.BinarizeMethod.AdaptiveThreshold">
+      <summary> Adapts to surrounding pixels, highlights subtle changes in intensity.  Most forgiving thresholding method
+ but can produce noisy images. </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.BinarizeMethod.DynamicThreshold">
+      <summary> Dynamically adapts to surrounding pixels, highlights subtle changes in intensity.  More faithful to large
+ dark areas. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand">
+      <summary> Converts a grayscale or color image to black and white using one of the available Binarize methods.
+ </summary>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand&quot;]/*" />
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand._ctor">
+      <summary> Creates a new instance of <STRONG>BinarizeCommand</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand._ctor(BinarizeMethod)">
+      <summary> Creates a new instance of <STRONG>BinarizeCommand </STRONG>specifying the binarization method. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.BinarizationMethod">
+      <summary> Gets or sets a value indicating the type of binarization to use. </summary>
+      <remarks> Default value is AdaptiveThreshold. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.BinarizationMethod">
+      <summary> Gets or sets a value indicating the type of binarization to use. </summary>
+      <remarks> Default value is AdaptiveThreshold. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.ThresholdDifferencing">
+      <summary> Gets or sets the thresholding differencing used for the AdaptiveThreshold method. </summary>
+      <remarks> Default is 7. </remarks>
+      <exception> Throws when value is less than 1 or greater than 255. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.ThresholdDifferencing">
+      <summary> Gets or sets the thresholding differencing used for the AdaptiveThreshold method. </summary>
+      <remarks> Default is 7. </remarks>
+      <exception> Throws when value is less than 1 or greater than 255. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.InitialThreshold">
+      <summary> Gets or sets the seed threshold value to use for GlobalThreshold and the actual threshold value to use for
+ SimpleThreshold methods. </summary>
+      <remarks> Default value is 127. </remarks>
+      <exception> Throws when value is less than 1 or greater than 255. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.InitialThreshold">
+      <summary> Gets or sets the seed threshold value to use for GlobalThreshold and the actual threshold value to use for
+ SimpleThreshold methods. </summary>
+      <remarks> Default value is 127. </remarks>
+      <exception> Throws when value is less than 1 or greater than 255. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.BlackGrouping">
+      <summary> A percentile indication of how tightly grouped black pixels need to be. </summary>
+      <remarks> A value from 0 to 1.  Default is 0.25.  0.4 is roughly equivalent to the AdaptiveThresholding command
+ </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.BlackGrouping">
+      <summary> A percentile indication of how tightly grouped black pixels need to be. </summary>
+      <remarks> A value from 0 to 1.  Default is 0.25.  0.4 is roughly equivalent to the AdaptiveThresholding command
+ </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BinarizeCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports all continuous tone pixel formats. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand">
+      <summary> Crops black borders from the edges of a bi-tonal image. </summary>
+      <remarks>
+        <para>Similar to <c>AdvancedBorderRemovalCommand</c>, but crops the image as opposed to making the
+ border white.  This command is much faster than <STRONG>AdvancedBorderRemoval</STRONG>.</para>
+        <para>Uses a more advanced algorithm than <STRONG>AutoCropCommand</STRONG> and <STRONG>BorderRemovalCommand</STRONG>
+ included with DotImage Document Imaging.</para>
+        <para>When applying this command, the resulting ImageResults is an instance of <c>AutoBorderCropResults</c>
+ containing the coordinates of the detected border.</para>
+      </remarks>
+      <seealso> AdvancedBorderRemovalCommand Class </seealso>
+      <seealso> AutoBorderCropResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand._ctor">
+      <summary> Creates a new instance of <STRONG>AutoBorderCropCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.MaxBoundaryWhitespace">
+      <summary> The maximum amount of white space in pixels from the edge of the image to the start of the border.
+ </summary>
+      <remarks> Default value is 16. </remarks>
+      <exception> Thrown when value is less than 0. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.MaxBoundaryWhitespace">
+      <summary> The maximum amount of white space in pixels from the edge of the image to the start of the border.
+ </summary>
+      <remarks> Default value is 16. </remarks>
+      <exception> Thrown when value is less than 0. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.BorderNoiseTolerance">
+      <summary>
+        <para>The acceptable percentage of white pixel "noise" within the black border area.</para>
+      </summary>
+      <remarks> Valid values are from 0 to 1, with default of 0.15.  A value of 0 indicates zero tolerance for noise where
+ the entire border must be completely black. </remarks>
+      <exception> Thrown when value is less than 0 or greater than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.BorderNoiseTolerance">
+      <summary>
+        <para>The acceptable percentage of white pixel "noise" within the black border area.</para>
+      </summary>
+      <remarks> Valid values are from 0 to 1, with default of 0.15.  A value of 0 indicates zero tolerance for noise where
+ the entire border must be completely black. </remarks>
+      <exception> Thrown when value is less than 0 or greater than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.BorderStreakTolerance">
+      <summary>
+        <para>The acceptable percentage of white streaks within the black border area.</para>
+      </summary>
+      <remarks> A "streak" is a solid white scanline when inspecting the border area.  A set of white streaks with its
+ thickness less than a number of MaxBorderThickness * StreakTolerance will be considered a part of the black border.
+ Valid values are from 0 to 1, with a default value of 0.1. </remarks>
+      <exception> Thrown when value is less than 0 or greater than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.BorderStreakTolerance">
+      <summary>
+        <para>The acceptable percentage of white streaks within the black border area.</para>
+      </summary>
+      <remarks> A "streak" is a solid white scanline when inspecting the border area.  A set of white streaks with its
+ thickness less than a number of MaxBorderThickness * StreakTolerance will be considered a part of the black border.
+ Valid values are from 0 to 1, with a default value of 0.1. </remarks>
+      <exception> Thrown when value is less than 0 or greater than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.MaxBorderThickness">
+      <summary> Gets or sets the maximum border thickness, in pixels, that will be removed. </summary>
+      <remarks> Default value is 60.  The algorithm will only scan lines that are within this many pixels from the edge of
+ the image. </remarks>
+      <exception> Thrown when value is less than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.MaxBorderThickness">
+      <summary> Gets or sets the maximum border thickness, in pixels, that will be removed. </summary>
+      <remarks> Default value is 60.  The algorithm will only scan lines that are within this many pixels from the edge of
+ the image. </remarks>
+      <exception> Thrown when value is less than 1. </exception>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropResults">
+      <summary> Provides custom ImageResults for <c>AutoBorderCropCommand</c>. </summary>
+      <see> AutoBorderCropCommand Class </see>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropResults._ctor">
+      <summary> Creates a new instance of <STRONG>AutoBorderCropResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropResults._ctor">
+      <summary> Creates a new instance of <STRONG>AutoBorderCropResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropResults._ctor(Rectangle)">
+      <summary> Creates a new instance of <STRONG>AutoBorderCropResults </STRONG>specifying the boundary coordinates.
+ </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoBorderCropResults.BorderRectangle">
+      <summary> Gets the rectangular coordinates of the detected border. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand">
+      <summary>
+        <para>Automatically inverts regions of text that are inverted (white on black) on a bi-tonal image.</para>
+      </summary>
+      <remarks> This command is useful when pre-processing documents prior to OCR, as many OCR engines do not recognize
+ inverted text areas. </remarks>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand._ctor">
+      <summary> Creates an instance of <STRONG>AutoInverseTextCorrectionCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.AutoPropertyConfigurationEnabled">
+      <summary> Gets or sets a value indicating if properties in the <c>PropertiesToAutoConfigure</c> property will
+ be automatically determined by the command when processed. </summary>
+      <remarks> Set this to false when hand tweaking auto configurable properties.  Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.AutoPropertyConfigurationEnabled">
+      <summary> Gets or sets a value indicating if properties in the <c>PropertiesToAutoConfigure</c> property will
+ be automatically determined by the command when processed. </summary>
+      <remarks> Set this to false when hand tweaking auto configurable properties.  Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.PropertiesToAutoConfigure">
+      <summary> Gets a collection of property names that will be auto configured when <c>AutoPropertyConfigurationEnabled</c> is true. </summary>
+      <remarks> This collection can be modified by adding or removing property names to be auto configured.  Properties
+ must have the <c>AutoConfigurableAttribute</c> to be added to this collection.  All AutoConfigurable
+ properties are added to this collection by default including InvertedRegionSizeMinimum, InvertedRegionSizeMaximum,
+ and TextThickness. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.InvertedRegionSizeMinimum">
+      <summary> Minimum size limit of of inverted text region in pixels. </summary>
+      <value> Size </value>
+      <remarks> Auto configurable.  Default size is 40, 40. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.InvertedRegionSizeMinimum">
+      <summary> Minimum size limit of of inverted text region in pixels. </summary>
+      <value> Size </value>
+      <remarks> Auto configurable.  Default size is 40, 40. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.InvertedRegionSizeMaximum">
+      <summary> Maximum size in pixels of the inverted text region. </summary>
+      <value> Size </value>
+      <remarks> Auto configurable.  Default value is 400, 400. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.InvertedRegionSizeMaximum">
+      <summary> Maximum size in pixels of the inverted text region. </summary>
+      <value> Size </value>
+      <remarks> Auto configurable.  Default value is 400, 400. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoInvertTextCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand">
+      <summary> Crops excess white borders from a bi-tonal image. </summary>
+      <remarks>
+        <para>When scanned images contain large white borders or margins, this will automatically crop the image
+ leaving only the interesting document features.</para>
+        <para>When applying this command, the resulting ImageResults is an instance of <c>MarginCropResults</c>
+ containing the margin boundary.</para>
+      </remarks>
+      <seealso> MarginCropResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand._ctor">
+      <summary> Creates a new instance of <STRONG>MarginCropCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand.Denoise">
+      <summary> When true, will remove noise before detecting the margin. </summary>
+      <remarks> Default value is false. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand.Denoise">
+      <summary> When true, will remove noise before detecting the margin. </summary>
+      <remarks> Default value is false. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.MarginCropCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.MarginCropResults">
+      <summary> Provides custom ImageResults for <c>MarginCropCommand</c>. </summary>
+      <see> MarginCropCommand Class </see>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.MarginCropResults._ctor">
+      <summary> Creates a new instance of <STRONG>MarginCropResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.MarginCropResults._ctor(Rectangle)">
+      <summary> Creates a new instance of <STRONG>MarginCropResults</STRONG> given the border rectangle. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.MarginCropResults.BorderRectangle">
+      <summary> Gets the rectangular coordinates of the detected border. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand">
+      <summary> Inspects an bi-tonal image to determine if the image is negated.  Will automatically invert the image if
+ <c>InvertWhenWhiteOnBlack</c>. </summary>
+      <remarks>
+        <para>When applying this command, the resulting <STRONG>ImageResults</STRONG> is an instance of <c>AutoNegateResults</c> containing a boolean <EM>IsInverted</EM> property.</para>
+      </remarks>
+      <seealso> AutoNegateResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand&quot;]/*" />
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand._ctor">
+      <summary> Creates a new instance of <STRONG>AutoNegateCommand</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand._ctor(Boolean)">
+      <summary> Initializes a new instance of <STRONG>AutoNegateCommand</STRONG> specifying if the command should invert
+ the image, or just report results. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand.InvertWhenWhiteOnBlack">
+      <summary> When true will automatically invert the image when the resulting IsInverted property is true. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand.InvertWhenWhiteOnBlack">
+      <summary> When true will automatically invert the image when the resulting IsInverted property is true. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateCommand.InPlaceProcessing">
+      <summary> Returns true because this command will process the image in-place and not allocate a new block of memory.
+ </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateResults">
+      <summary> Provides a custom ImageResults for the <c>AutoNegateCommand</c>. </summary>
+      <seealso> AutoNegateCommand Class </seealso>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateResults._ctor">
+      <summary> Creates a new instance of <STRONG>AutoNegateResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateResults._ctor(Boolean)">
+      <summary> Creates a new instance of <STRONG>AutoNegateResults</STRONG> specifying the value of IsInverted.
+ </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.AutoNegateResults.IsInverted">
+      <summary> Gets a value indicating if the given image is inverted (White on Black). </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand">
+      <summary> Detect whether a given image (or a region of interest in the image) is blank. </summary>
+      <remarks>
+        <para>A custom ImageResults is returned called <c>BlankPageDetectionResults</c> with the property
+ <EM>IsImageBlank</EM>.  Use this property to determine if the image is blank or not.</para>
+        <para>Note that this command supports bitonal images only, however it can be used with color images as well by
+ setting <STRONG>ApplyToAnyPixelFormat</STRONG> to true.  When doing this, be sure to set the
+ <STRONG>DefaultPixelFormatChanger</STRONG> to one that uses a Document Thresholding method.</para>
+      </remarks>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand&quot;]/*" />
+      <seealso> BlankPageDetectionResults Class </seealso>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand._ctor">
+      <summary> Creates a new instance of <STRONG>BlankPageDetectionCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.RemoveBorder">
+      <summary> Will remove black borders in the image prior to detecting blank page when true. </summary>
+      <remarks> Default value is false. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.RemoveBorder">
+      <summary> Will remove black borders in the image prior to detecting blank page when true. </summary>
+      <remarks> Default value is false. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.Denoise">
+      <summary> Will remove noise in the image prior to detecting blank page when true. </summary>
+      <remarks> Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.Denoise">
+      <summary> Will remove noise in the image prior to detecting blank page when true. </summary>
+      <remarks> Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.MinObjectSize">
+      <summary>
+        <para>Objects that are smaller than this size will be ignored when detecting blank pages.</para>
+      </summary>
+      <remarks> Default value is (10, 20). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.MinObjectSize">
+      <summary>
+        <para>Objects that are smaller than this size will be ignored when detecting blank pages.</para>
+      </summary>
+      <remarks> Default value is (10, 20). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.InPlaceProcessing">
+      <summary> Returns true because this command doesn't actually return a new image, just returns the source image.
+ </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+      <remarks> This property is auto configurable.  It will have no effect on the image if <c>AutoPropertyConfigurationEnabled</c> is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+      <remarks> This property is auto configurable.  It will have no effect on the image if <c>AutoPropertyConfigurationEnabled</c> is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionResults">
+      <summary> Provides a custom ImageResults for <c>BlankPageDetectionCommand</c>. </summary>
+      <seealso> BlankPageDetectionCommand Class </seealso>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionResults._ctor">
+      <summary> Creates a new instance of <STRONG>BlankPageDetectionResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionResults._ctor(Boolean)">
+      <summary> Creates a new instance of <STRONG>BlankPageDetectionResults</STRONG> specifying IsImageBlank. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlankPageDetectionResults.IsImageBlank">
+      <summary> Gets a value that when true indicates the image (or region of interest of the image) is blank as a result
+ of <c>BlankPageDetectionCommand</c>. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand">
+      <summary> A generic object removal command for bi-tonal images. </summary>
+      <remarks>
+        <para>Objects of which sizes are between minium and maximum user-input size will be removed out of a given
+ image.</para>
+        <para>Other commands such as <c>HolePunchRemovalCommand</c> are specialized versions of 
+ BlobRemovalCommand.</para>
+      </remarks>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand._ctor">
+      <summary> Creates a new instance of <STRONG>BlobRemovalCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.MinObjectSize">
+      <summary> Minimum size of the object to remove. </summary>
+      <remarks> An object is a set of connected pixels. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.MinObjectSize">
+      <summary> Minimum size of the object to remove. </summary>
+      <remarks> An object is a set of connected pixels. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.BlobRemovalCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand">
+      <summary> This command detects color regions from a color document resulting in an image with grayscale and bi-tonal
+ areas masked with transparent alpha, and notification if the document contains any color. </summary>
+      <remarks>
+        <para>This command is very useful for scanning documents as color, and automatically detecting when a
+ document has no color so that it can be converted to black and white for better compression.  The <EM>Apply</EM>
+ method will result in an instance of <c>ColorExtractionResults</c> that contains a <c>ColorExtractionResults.HasColor</c> property.  When <EM>HasColor</EM> is false, the document has only gray
+ shades and can be converted to black and white with little to no loss in quality.  When <EM>HasColor</EM> is true,
+ it generally means that the document has color regions and that it should remain a color document to retain this
+ color information.</para>
+        <para>The resulting <EM>Image</EM> in <STRONG>ColorExtractionResults</STRONG> is always a 32-bit BGRA with a
+ transparent alpha channel masking the non-color areas.  When no color is detected the resulting <EM>Image</EM> is a
+ 1x1 pixel transparent image.</para>
+        <para>There are two distinct types of color areas in a document.  A color marking can be a highlight region, red
+ pen, or other solid colors.  A photo region is an area with a lot of visual activity usually represented in a color
+ or grayscale photograph.  This command has the ability to detect color markings, photos, or both.  </para>
+        <para>The default values are optimized for detecting color in scanned documents.  By adjusting
+ <EM>GrayscaleTolerance</EM> to a higher level, this command can be used for other purposes such as detecting
+ grayscale or color magazine scans.</para>
+      </remarks>
+      <seealso> ColorExtractionResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand._ctor">
+      <summary> Creates a new instance of <STRONG>ColorExtractionCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Faster</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Faster</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.VisualActivityWindowSize">
+      <summary> Specifies the masking window for estimating visual color activity used in photo region detection.
+ </summary>
+      <remarks> Default value is 3. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.VisualActivityWindowSize">
+      <summary> Specifies the masking window for estimating visual color activity used in photo region detection.
+ </summary>
+      <remarks> Default value is 3. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.MinPhotoSize">
+      <summary> Minimum size limit of photo regions in pixels. </summary>
+      <remarks> Default value is (100, 100). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.MinPhotoSize">
+      <summary> Minimum size limit of photo regions in pixels. </summary>
+      <remarks> Default value is (100, 100). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.MinMarkingSize">
+      <summary> Minimum size limit of color markings in pixels. </summary>
+      <remarks> Default value is (10,10). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.MinMarkingSize">
+      <summary> Minimum size limit of color markings in pixels. </summary>
+      <remarks> Default value is (10,10). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.DetectColorMarkings">
+      <summary> When true, color markings will be detected. </summary>
+      <remarks> A color marking can be a highlight region, red pen, or other solid colors.  Default value is true.
+ </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.DetectColorMarkings">
+      <summary> When true, color markings will be detected. </summary>
+      <remarks> A color marking can be a highlight region, red pen, or other solid colors.  Default value is true.
+ </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.DetectPhotos">
+      <summary> When true, color and gray photos will be detected. </summary>
+      <remarks> A photo region is an area with a lot of visual activity usually represented in a color or grayscale
+ photograph.  Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.DetectPhotos">
+      <summary> When true, color and gray photos will be detected. </summary>
+      <remarks> A photo region is an area with a lot of visual activity usually represented in a color or grayscale
+ photograph.  Default value is true. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.VisualActivityThreshold">
+      <summary> Controls the percentage of entropy threshold that factors in the photo detection algoithm. </summary>
+      <remarks> Valid values are from 0 to 1.0 with a default of 0.2. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.VisualActivityThreshold">
+      <summary> Controls the percentage of entropy threshold that factors in the photo detection algoithm. </summary>
+      <remarks> Valid values are from 0 to 1.0 with a default of 0.2. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.GrayscaleSaturation">
+      <summary> This value controls the saturation threshold where a saturation less than the given value will be regarded
+ as gray. </summary>
+      <remarks> Valid values are from 0 to 1.0, with a default of 0.2. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.GrayscaleSaturation">
+      <summary> This value controls the saturation threshold where a saturation less than the given value will be regarded
+ as gray. </summary>
+      <remarks> Valid values are from 0 to 1.0, with a default of 0.2. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.GrayscaleTolerance">
+      <summary> This value controls the amount in percent that any given pixel color is off of pure gray. </summary>
+      <remarks> The higher the value, the more sensitive the command is to color.  Lower values reduces color sensitivity.
+ Valid values are from 0 to 1.0 with a default value of 0.036. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.GrayscaleTolerance">
+      <summary> This value controls the amount in percent that any given pixel color is off of pure gray. </summary>
+      <remarks> The higher the value, the more sensitive the command is to color.  Lower values reduces color sensitivity.
+ Valid values are from 0 to 1.0 with a default value of 0.036. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports color images only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionResults">
+      <summary> Provides custom ImageResults for <c>ColorExtractionCommand</c>. </summary>
+      <see> ColorExtractionCommand Class </see>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionResults._ctor">
+      <summary> Creates a new instance of <STRONG>ColorExtractionResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionResults._ctor(Boolean)">
+      <summary> Creates a new instance of <STRONG>ColorExtractionResults </STRONG>specifying if the image has color.
+ </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionResults._ctor(AtalaImage,Boolean)">
+      <summary> Creates a new instance of <STRONG>ColorExtractionResults</STRONG> specifying the resulting Image and
+ HasColor. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.ColorExtractionResults.HasColor">
+      <summary> Gets a value specifiying if the source image contains color. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalResults">
+      <summary> Provides custom ImageResults for <c>HalftoneRemovalCommand</c>. </summary>
+      <see> HalftoneRemovalCommand Class </see>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalResults._ctor">
+      <summary> Creates a new instance of <STRONG>HalftoneRemovalResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalResults._ctor(HalftoneCollection)">
+      <summary> Creates a new instance of <STRONG>HalftoneRemovalResults</STRONG> specifying the Halftones. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalResults.Halftones">
+      <summary> Gets a collection of <STRONG>Halftone</STRONG> objects that are located in the applied image. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand">
+      <summary> Detects and removes shaded regions from bi-tonal images. </summary>
+      <remarks>
+        <para>Halftone removal is designed for regions that originate as shaded color or grayscale areas that when
+ thresholded to black and white, end up with a halftone texture.  OCR engines generally cannot recognize text that is
+ surrounded by halftoning.  This command can be used as pre-processing prior to OCR for improved OCR accuracy.</para>
+        <para>When applying this command, the resulting ImageResults is an instance of <c>HalftoneRemovalResults</c>
+ containing the rectangular boundary of each detected halftone region.</para>
+      </remarks>
+      <seealso> HalftoneRemovalResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand._ctor">
+      <summary> Creates a new instance of <STRONG>HalftoneRemovalCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand.MinRegionSize">
+      <summary> The minimum region size that will be detected as halftone. </summary>
+      <remarks> Default value is 100, 20. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand.MinRegionSize">
+      <summary> The minimum region size that will be detected as halftone. </summary>
+      <remarks> Default value is 100, 20. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand.SpeedFactor">
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand.SpeedFactor">
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneRemovalCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.ImageEdges">
+      <summary> Indicates the edge of the image to inspect for commands such as <c>HolePunchRemovalCommand</c>.
+ </summary>
+      <remarks> This enumeration uses the FlagAttribute allowing each item to be OR'ed together to combine sides.
+ </remarks>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.ImageEdges.Left">
+      <summary> Left side of the image </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.ImageEdges.Right">
+      <summary> Right side of the image </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.ImageEdges.Top">
+      <summary> Top of the image </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.ImageEdges.Bottom">
+      <summary> Bottom of the image </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.RunSpeed">
+      <summary> Defines the speed of processing at the expense of quality </summary>
+      <remarks> Heuristically speaking, Fast and Faster option enhance speed 4 and 16 times compared to Normal,
+ respectively. </remarks>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.RunSpeed.Normal">
+      <summary>No sampling performed. </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.RunSpeed.Fast">
+      <summary> Image is sampled by 1/2 for analysis. </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.RunSpeed.Faster">
+      <summary> Image is sampled by 1/4 for analysis. </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.RunSpeed.Fastest">
+      <summary> Image is sampled by 1/8 for analysis. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.LineOrientations">
+      <summary> Controls the Line Orientation used in <c>LineRemovalCommand</c>. </summary>
+      <remarks> This enum is flagged and can be OR'ed to combine multiple options. </remarks>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.LineOrientations.None">
+      <summary> None </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.LineOrientations.Horizontal">
+      <summary> Horizontal </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.LineOrientations.Vertical">
+      <summary> Vertical </summary>
+    </member>
+    <member name="F:Atalasoft.Imaging.ImageProcessing.Document.LineOrientations.Orthogonal">
+      <summary> Both Horizontal and Vertical.  Same as Vertical | Horizontal. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SegmentsLocatedEventArgs.SegmentsIn">
+      <summary> All the segments that have been identified </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SegmentsLocatedEventArgs.SegmentsOut">
+      <summary> The segments whic will be identified </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SegmentsLocatedEventArgs.SegmentsOut">
+      <summary> The segments whic will be identified </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.Geometry">
+      <summary> A member of Segment class, spatial information with collection of polgons is provided </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Geometry.Bounds">
+      <summary> Rectangular region bounding all of SubRegions </summary>
+      <value> Rectangle </value>
+      <remarks> Rectangular bounding box of a segmented region </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Geometry.IsRectangular">
+      <summary> Indicator whether the geometry of interest is rectangle </summary>
+      <value> bool </value>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.Halftone">
+      <remarks> A halftone is a screen of dots that are used in a black and white image to simulate levels of gray.
+ </remarks>
+      <summary> Represents a halftone region in an image. </summary>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.Halftone._ctor">
+      <summary> Creates a new instance of <STRONG>Halftone</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.Halftone._ctor(Rectangle)">
+      <summary> Creates a new instance of <STRONG>Halftone</STRONG> specifying the bounds. </summary>
+      <param name="bounds"> The rectangular bounds of the halftone on the image. </param>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Halftone.Bounds">
+      <summary> Gets the rectangular boundary of the halftone region. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection">
+      <summary> Represents a collection of <c>Halftone</c> objects. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection._ctor">
+      <summary> Creates a new instance of <STRONG>HalftoneCollection</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection.Item">
+      <summary> Returns the <STRONG>Halftone</STRONG> object at the specified index. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection.Add(Atalasoft.Imaging.ImageProcessing.Document.Halftone)">
+      <summary> Adds a new <STRONG>Halftone</STRONG> item to the collection. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection.Contains(Atalasoft.Imaging.ImageProcessing.Document.Halftone)">
+      <summary> Returns true if the specified <STRONG>Halftone</STRONG> object exists in the collection. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection.IndexOf(Atalasoft.Imaging.ImageProcessing.Document.Halftone)">
+      <summary> Searches the collection for the specified <STRONG>Halftone</STRONG> object and returns the index in the
+ array, or -1 if it's not found. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection.Insert(System.Int32,Atalasoft.Imaging.ImageProcessing.Document.Halftone)">
+      <summary> Inserts a <STRONG>Halftone</STRONG> object in at the specifed index in the collection. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HalftoneCollection.Remove(Atalasoft.Imaging.ImageProcessing.Document.Halftone)">
+      <summary> Removes the specified <STRONG>Halftone</STRONG> object from the collection. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HolePunch">
+      <summary> Represents a single hole punch in an image. </summary>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.HolePunch._ctor">
+      <summary> Creates a new instance of <STRONG>HolePunch</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunch._ctor(Rectangle)">
+      <summary> Creates a new instance of <STRONG>HolePunch</STRONG> specifying the hole punch bounds. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunch._ctor(SerializationInfo, StreamingContext)">
+      <summary> Creates a new instance of <STRONG>HolePunch</STRONG> specifying the hole punch bounds. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunch.Bounds">
+      <summary> Gets the rectangular boundary of the hole punch. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection">
+      <summary> Represents a collection of <c>HolePunch</c> objects. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection._ctor">
+      <summary> Creates a new instance of <STRONG>HolePunchCollection</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection.Item">
+      <summary> Returns the <STRONG>HolePunch </STRONG>object at the specified index. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection.Add(Atalasoft.Imaging.ImageProcessing.Document.HolePunch)">
+      <summary> Adds a new <STRONG>HolePunch</STRONG> object to the collection. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection~Contains">
+      <summary> Returns true if the specified <STRONG>HolePunch </STRONG>object exists in the collection. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection.IndexOf(Atalasoft.Imaging.ImageProcessing.Document.HolePunch)">
+      <summary> Searches the collection for the specified <STRONG>HolePunch </STRONG>object and returns the index in the
+ array, or -1 if it's not found. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection.Insert(System.Int32,Atalasoft.Imaging.ImageProcessing.Document.HolePunch)">
+      <summary> Inserts a <STRONG>HolePunch </STRONG>object in at the specifed index in the collection. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchCollection.Remove(Atalasoft.Imaging.ImageProcessing.Document.HolePunch)">
+      <summary> Removes the specified <STRONG>HolePunch </STRONG>object from the collection. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand">
+      <summary> Removes circular hole punch artifacts from an image. </summary>
+      <remarks>
+        <para>When applying this command, the resulting ImageResults is an instance of <c>HolePunchRemovalResults</c> containing the rectangular boundary of each detected hole punch.</para>
+      </remarks>
+      <seealso> HolePunchRemovalResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand._ctor">
+      <summary> Creates a new instance of <STRONG>HolePunchRemovalCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.HolePunchLocation">
+      <summary> The location of hole punches on the image (Left, Top, Right, Bottom). </summary>
+      <remarks> Default value is Left.  ImageEdges can be or'ed together for the algorithm to search more than one edge.
+ </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.HolePunchLocation">
+      <summary> The location of hole punches on the image (Left, Top, Right, Bottom). </summary>
+      <remarks> Default value is Left.  ImageEdges can be or'ed together for the algorithm to search more than one edge.
+ </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.MinHolePunchSize">
+      <summary> The minimum size hole punch that will be removed in pixels. </summary>
+      <remarks> Default value is 10.  This property is auto configurable. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.MinHolePunchSize">
+      <summary> The minimum size hole punch that will be removed in pixels. </summary>
+      <remarks> Default value is 10.  This property is auto configurable. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.MaxHolePunchSize">
+      <summary> The maximum size hole punch that will be removed in pixels. </summary>
+      <remarks> Default value is 80.  This property is auto configurable. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.MaxHolePunchSize">
+      <summary> The maximum size hole punch that will be removed in pixels. </summary>
+      <remarks> Default value is 80.  This property is auto configurable. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.ContentClusteringHint">
+      <remarks> This property is useful when holepunches are located near the text body.  Default value is 20. </remarks>
+      <summary> The minimum distance in pixels between the hole punch boundary, and the text body. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.ContentClusteringHint">
+      <remarks> This property is useful when holepunches are located near the text body.  Default value is 20. </remarks>
+      <summary> The minimum distance in pixels between the hole punch boundary, and the text body. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.SpeedFactor">
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.SpeedFactor">
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Fast</EM>. </remarks>
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.AutoPropertyConfigurationEnabled">
+      <summary> Gets or sets a value indicating if properties in the <c>HolePunchRemovalCommand.PropertiesToAutoConfigure</c> property will be automatically determined by the command
+ when processed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.AutoPropertyConfigurationEnabled">
+      <summary> Gets or sets a value indicating if properties in the <c>HolePunchRemovalCommand.PropertiesToAutoConfigure</c> property will be automatically determined by the command
+ when processed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.PropertiesToAutoConfigure">
+      <remarks> This collection can be modified by adding or removing property names to be auto configured.  Properties
+ must have the <c>AutoConfigurableAttribute</c> to be added to this collection.  All AutoConfigurable
+ properties are added to this collection by default which include MaxHolePunchSize and MinHolePunchSize. </remarks>
+      <summary> Gets a collection of property names that will be auto configured when <c>HolePunchRemovalCommand.AutoPropertyConfigurationEnabled</c> is true. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalResults">
+      <summary> Provides custom ImageResults for <c>HolePunchRemovalCommand</c>. </summary>
+      <see> HolePunchRemovalCommand Class </see>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalResults._ctor">
+      <summary> Creates a new instance of <STRONG>HolePunchRemovalResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalResults._ctor(HolePunchCollection)">
+      <summary> Creates a new instance of <STRONG>HolePunchRemovalResults</STRONG> specifying a collection of hole
+ punches. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.HolePunchRemovalResults.HolePunches">
+      <summary> Gets a collection of <STRONG>HolePunch</STRONG> objects. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.IProcessSpeedConfig">
+      <summary> Interface that when applied to a class is used to control the sampling factor useful in improving
+ performance possibly at the expense of accuracy. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.IProcessSpeedConfig.SpeedFactor">
+      <summary> Gets or sets the sample size of the image to process, affecting quality and speed. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.IProcessSpeedConfig.SpeedFactor">
+      <summary> Gets or sets the sample size of the image to process, affecting quality and speed. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.Line">
+      <summary> Represents a single line in an image. </summary>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.Line._ctor">
+      <summary> Creates a new instance of <STRONG>Line</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.Line._ctor(Point,Point,Int32)">
+      <summary> Creates a new instance of <STRONG>Line</STRONG> specifying the start point, end point, and thickness.
+ </summary>
+      <param name="startpoint"> start point of the line relative to the image </param>
+      <param name="endpoint"> end point of the line relative to the image </param>
+      <param name="thickness"> the thickness of the line in pixels </param>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Line.Startpoint">
+      <summary> Gets the start point of the line relative to the image. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Line.Startpoint">
+      <summary> Gets the start point of the line relative to the image. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Line~Endpoint">
+      <summary> Gets the end point of the line relative to the image. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Line~Endpoint">
+      <summary> Gets the end point of the line relative to the image. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Line.Thickness">
+      <summary> Gets the thickness of the line in pixels. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.Line.Thickness">
+      <summary> Gets the thickness of the line in pixels. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.LineCollection">
+      <summary> Represents a collection of <STRONG>Line</STRONG> objects. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.LineCollection._ctor">
+      <summary> Creates a new instance of <STRONG>LineCollection</STRONG>. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand">
+      <summary> This class removes horizontal and/or vertical lines in a bi-tonal image. </summary>
+      <remarks>
+        <para>When applying this command, the resulting ImageResults is an instance of <c>LineRemovalResults</c> containing the start point, end point, and thickness of each detected line.</para>
+      </remarks>
+      <seealso> LineRemovalResults Class </seealso>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand._ctor">
+      <summary> Creates a new instance of LineRemovalCommand. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.ReconnectBrokenCharacters">
+      <summary> When true, reconnects characters that are damaged when intersecting a line that is removed. </summary>
+      <value> bool </value>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.ReconnectBrokenCharacters">
+      <summary> When true, reconnects characters that are damaged when intersecting a line that is removed. </summary>
+      <value> bool </value>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MinLineLength">
+      <summary> Minimum size limit of the lines to be removed in pixels. </summary>
+      <remarks> Default value is (100, 100). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MinLineLength">
+      <summary> Minimum size limit of the lines to be removed in pixels. </summary>
+      <remarks> Default value is (100, 100). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MaxLineGap">
+      <summary> Lines detected will have a gap no greater than this value in pixels. </summary>
+      <remarks> Default value is 20.  A value greater than 20 will remove broken lines. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MaxLineGap">
+      <summary> Lines detected will have a gap no greater than this value in pixels. </summary>
+      <remarks> Default value is 20.  A value greater than 20 will remove broken lines. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.AngleTolerance">
+      <summary> The tolerance in degrees offset from vertical or horizontal. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.AngleTolerance">
+      <summary> The tolerance in degrees offset from vertical or horizontal. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MinLineThickness">
+      <summary> Minimum thickness in pixels of the line to be removed. </summary>
+      <remarks> Default value is 0. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MinLineThickness">
+      <summary> Minimum thickness in pixels of the line to be removed. </summary>
+      <remarks> Default value is 0. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MaxLineThickness">
+      <summary> Maximum thickness in pixels of the line to be removed. </summary>
+      <remarks> Default value is 14. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.MaxLineThickness">
+      <summary> Maximum thickness in pixels of the line to be removed. </summary>
+      <remarks> Default value is 14. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.Orientation">
+      <summary> Orientation of the line to be removed: horizontal, vertical, or both. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.Orientation">
+      <summary> Orientation of the line to be removed: horizontal, vertical, or both. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.TextThickness">
+      <summary> Gets or sets the average text thickness in pixels, which affects object detection quality. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalResults">
+      <summary> Provides custom ImageResults for <c>LineRemovalCommand</c>. </summary>
+      <see> LineRemovalCommand Class </see>
+    </member>
+    <member name="O:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalResults._ctor">
+      <summary> Creates a new instance of <STRONG>LineRemovalResults</STRONG>. </summary>
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalResults._ctor(LineCollection)">
+      <summary> Creates a new instance of <STRONG>LineRemovalResults </STRONG>specifying a collection of Lines. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.LineRemovalResults.Lines">
+      <summary> A collection of <STRONG>Line</STRONG> objects. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.Segment">
+      <summary> This class is designed to store spatial and qualitative information of the results of the document image
+ segmentation algorithm for document images. </summary>
+    </member>
+    <member name="N:Atalasoft.Imaging.ImageProcessing.Document">
+      <summary> Namespace where all Advanced Document Cleanup Commands are located. </summary>
+    </member>
+    <member name="T:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand">
+      <summary> Removes specks of a specified size from a bi-tonal image. </summary>
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand&quot;]/*" />
+      <include file="external documentation.txt" path="MyDocs/MyMembers[@name=&quot;Atalasoft.dotImage.AdvancedDocClean~Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand&quot;]/*" />
+    </member>
+    <member name="M:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand._ctor">
+      <summary> Creates a new instance of <STRONG>SpeckRemovalCommand</STRONG>. </summary>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.MinObjectSize">
+      <summary> The minimum speck size that will be removed. </summary>
+      <remarks> Default value is (0, 0). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.MinObjectSize">
+      <summary> The minimum speck size that will be removed. </summary>
+      <remarks> Default value is (0, 0). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.MaxObjectSize">
+      <summary> The maximum speck size that will be removed. </summary>
+      <remarks> Default value is (5, 5). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.MaxObjectSize">
+      <summary> The maximum speck size that will be removed. </summary>
+      <remarks> Default value is (5, 5). </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.SpeedFactor">
+      <summary> Determines the sample size of the image to process, affecting quality and speed. </summary>
+      <remarks> This algorithm will resample the source image by 1 (<EM>Normal</EM>), 1/2 (<EM>Fast</EM>), 1/4
+ (<EM>Faster</EM>), or 1/8 (<EM>Fastest</EM>) prior to object detection.  This setting can can heavily influence
+ performance, sometimes at the expense of quality.  Default value is <EM>Normal</EM>. </remarks>
+    </member>
+    <member name="P:Atalasoft.Imaging.ImageProcessing.Document.SpeckRemovalCommand.SupportedPixelFormats">
+      <summary> Gets a list of PixelFormats that this command will support without throwing an exception.  This command
+ supports Pixel1bppIndexed only. </summary>
+    </member>
+  </members>
+</doc>
